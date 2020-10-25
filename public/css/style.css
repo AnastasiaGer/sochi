@@ -730,7 +730,7 @@ body {
   margin: 0 auto; }
 
 .page-section {
-  background-image: url("../images/top-bg-3.jpg");
+  background-image: url("../images/page-bg-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -863,6 +863,10 @@ body {
     -webkit-transition: all .3s;
     transition: all .3s; }
     .top__social-link:hover {
+      opacity: 1; }
+  .top__social-link svg {
+    padding-top: 5px; }
+    .top__social-link svg:hover {
       opacity: 1; }
 
 .products__inner {

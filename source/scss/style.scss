@@ -102,6 +102,12 @@
       opacity: 1;
     }
   }
+  &__social-link svg{
+    padding-top: 5px;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 
