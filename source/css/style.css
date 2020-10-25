@@ -730,7 +730,7 @@ body {
   margin: 0 auto; }
 
 .page-section {
-  background-image: url("../images/page-bg.jpg");
+  background-image: url("../images/top-bg-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -819,7 +819,7 @@ body {
   display: none; }
 
 .top {
-  background-image: url("../images/top-bg.jpg"); }
+  background-image: url("../images/top-bg-1.jpg"); }
   .top::before {
     content: '';
     position: absolute;
