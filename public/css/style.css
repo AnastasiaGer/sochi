@@ -6,7 +6,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400; }
 
-.header__inner, .products__slider-text, .questions__item-title {
+.header__inner {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500; }
 
@@ -14,7 +14,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700; }
 
-.title {
+.title, .reviews-block__text {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400; }
 
@@ -734,7 +734,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .page-section::before {
     content: '';
     position: absolute;
@@ -746,7 +747,6 @@ body {
     opacity: 0.15; }
   .page-section__wrapper {
     min-height: 100vh;
-    padding: 74px 0 50px;
     position: relative;
     z-index: 1; }
 
@@ -764,6 +764,35 @@ body {
   bottom: 0;
   left: 0;
   right: 0; }
+
+.btn {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px; }
+  .btn span {
+    padding: 17px 57px 15px 17px;
+    background-color: #c29a59;
+    display: inline-block;
+    margin-left: 19px;
+    position: relative; }
+    .btn span::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: #fff;
+      top: 50%;
+      left: -10px; }
+    .btn span::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 20px;
+      background-image: url("../images/arrows-right.svg");
+      top: 50%;
+      right: 17px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
 .header {
   position: fixed;
@@ -785,7 +814,7 @@ body {
             align-items: center;
     min-height: 30px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 17px; }
   .header__btn {
     color: #fff;
@@ -897,45 +926,66 @@ body {
 .slick-slider button {
   display: none; }
 
-.products__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 50px;
-  position: relative; }
+.surf-slider {
+  padding-top: 20px; }
+  .surf-slider .slider-arrows {
+    top: 50px;
+    opacity: .25; }
+  .surf-slider .slick-slide:nth-child(4n + 1) .surf-box {
+    margin-top: 32px; }
+  .surf-slider .slick-slide:nth-child(4n + 3) .surf-box {
+    margin-top: 89px; }
+  .surf-slider .slick-current .surf-box__inner-btn {
+    display: block; }
+  .surf-slider .slick-current .surf-box__inner {
+    background: rgba(28, 33, 33, 0.3); }
 
-.products__text {
-  max-width: 440px; }
-  .products__text p {
-    margin-bottom: 30px; }
+.surf-box__wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.products__slider-text {
-  position: absolute;
-  bottom: 30px;
-  left: -200px;
-  width: 285px;
-  text-align: right;
-  font-size: 24px;
-  line-height: 28px;
-  z-index: 5; }
-
-.products__slider-box {
+.surf-box__inner {
+  min-height: 550px;
+  background: rgba(28, 33, 33, 0.85);
   position: relative;
-  padding-top: 110px; }
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+  .surf-box__inner:hover {
+    background: rgba(28, 33, 33, 0.3); }
+    .surf-box__inner:hover .surf-box__inner-btn {
+      display: block; }
 
-.products__slider {
-  max-width: 560px; }
-  .products__slider::before {
-    content: "";
-    position: absolute;
-    width: 560px;
-    height: 276px;
-    border: 4px solid #fff;
-    top: -15px;
-    right: -17px; }
+.surf-box__inner-title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+  padding: 72px 0 0 40px;
+  width: 140px; }
+
+.surf-box__inner-location {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 8px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  right: 40px;
+  bottom: 80px;
+  height: 0;
+  width: 0;
+  white-space: nowrap; }
+  .surf-box__inner-location span {
+    font-weight: 100; }
+
+.surf-box__inner-btn {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  display: none; }
 
 .slider-btn {
   padding: 16px 26px;
@@ -1116,62 +1166,92 @@ body {
   line-height: 18px;
   font-weight: 300; }
 
-.questions__items {
-  max-width: 757px;
-  padding-bottom: 15px; }
-
-.questions__item {
-  max-width: 690px;
-  background: rgba(0, 0, 0, 0.3);
-  position: relative; }
-  .questions__item:nth-child(3)::before {
-    content: "";
-    position: absolute;
-    width: 319px;
-    height: 125px;
-    top: -33px;
-    right: -386px;
-    background-image: url("../images/questions-bg.png"); }
-
-.questions__item-title {
-  font-size: 21px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 20px 10px 20px 40px;
-  margin: 0 0 4px;
+.reviews-block {
   position: relative;
-  cursor: pointer; }
-  .questions__item-title::after {
-    content: url("../images/accordion-arrow.svg");
-    position: absolute;
-    right: -72px;
-    top: 0;
-    width: 72px;
-    height: 67px;
-    background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+  padding: 60px 0 40px; }
+  .reviews-block__text {
+    font-size: 36px;
+    line-height: 53px;
+    padding-left: 25px;
+    margin-bottom: 55px; }
 
-.questions__item-text {
-  font-size: 15px;
-  line-height: 22px;
-  padding: 0 5px 75px 50px;
-  margin: 0 0 4px;
-  display: none; }
+.review {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  text-align: center; }
 
-.questions__item.questions__item--active .questions__item-title::after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+.image-cover {
+  display: inline-block !important;
+  border-radius: 50%;
+  position: relative;
+  width: 180px;
+  height: 150px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px 0 #fff;
+          box-shadow: 0 0 5px 0 #fff;
+  margin-bottom: 10px; }
 
-.questions__item.questions__item--active .questions__item-text {
-  display: block; }
+.reviews-carousel .review .review-text {
+  background-color: #dca852;
+  padding: 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 300;
+  font-style: italic; }
+
+.reviews-carousel .review .review-text h3 {
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-style: normal; }
+
+.reviews-carousel .review .review-text p {
+  text-align: justify; }
+
+.reviews-carousel .review .name {
+  font-size: 20px;
+  color: #fff;
+  font-style: italic;
+  text-align: right;
+  padding: 10px 20px 5px 0; }
+
+.review.category-1 .review-text {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.review.category-2 .review-text {
+  background-color: #9bb64d; }
+
+.review.category-3 .review-text {
+  background-color: #5caec6; }
+
+.review.category-4 .review-text {
+  background-color: #c48193; }
+
+.review.category-5 .review-text {
+  background-color: #e36451; }
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
+.slick-prev {
+  left: -75px; }
+
+.slick-next {
+  right: -75px; }
 
 .contacts__inner {
   display: -webkit-box;
@@ -1569,10 +1649,15 @@ body {
     margin-top: 25px; }
   .specification__item--center {
     margin-top: 0; }
-  .questions__items {
-    padding-right: 60px; }
-  .questions__item-text {
-    padding: 0 15px 40px 30px; }
+  .reviews-carousel .review .review-text {
+    padding: 10px; }
+  .reviews-carousel .review .review-text h3 {
+    font-size: 16px; }
+  .reviews-carousel .review .review-text p {
+    font-size: 13px; }
+  .reviews-carousel .review .name {
+    font-size: 16px;
+    padding: 5px 10px 5px 0; }
   .contacts__inner {
     padding-left: 0; } }
 

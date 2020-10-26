@@ -16,11 +16,51 @@ $(function(){
     }]
   });
 
+  $('.surf-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/arrow-next.svg" alt=""></button>',
+    responsive: [
+      {
+          breakpoint: 1210,
+          settings: {
+              slidesToShow: 3
+          }
+      },
+      {
+          breakpoint: 900,
+          settings: {
+              slidesToShow: 2
+          }
+      },
+      {
+          breakpoint: 720,
+          settings: {
+              slidesToShow: 1,
+              centerMode: true
+          }
+      },
+      {
+          breakpoint: 426,
+          settings: {
+              slidesToShow: 1,
+              centerMode: false,
+          }
+      }
+  ]
+  });
 
-  $('.products__slider').slick({
-    prevArrow: '<button class="slider-btn slider-btn__left"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.21839 1L1 9L9.21839 17"/></svg></button>',
-    nextArrow: '<button class="slider-btn slider-btn__right"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.78161 17L9 9L0.78161 1"/></svg></button>',
-    infinite: false,
+
+  $('.reviews-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/arrow-next.svg" alt=""></button>',
+    autoplay: true,
+    speed: 4000,
+    fade: true,
   });
 
   $('.questions__item-title').on('click' , function(){
