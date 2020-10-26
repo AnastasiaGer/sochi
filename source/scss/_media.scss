@@ -418,13 +418,23 @@
     margin-top: 0;
   }
 
-  .questions__items {
-    padding-right: 60px;
-  }
+  .reviews-carousel .review .review-text {
+    padding:10px
+}
 
-  .questions__item-text {
-    padding: 0 15px 40px 30px;
-  }
+.reviews-carousel .review .review-text h3 {
+    font-size:16px
+}
+
+.reviews-carousel .review .review-text p {
+    font-size:13px
+}
+
+.reviews-carousel .review .name {
+    font-size: 16px;
+    padding:5px 10px 5px 0
+}
+
   .contacts__inner {
     padding-left: 0;
   }
