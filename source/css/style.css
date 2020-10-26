@@ -819,7 +819,10 @@ body {
   display: none; }
 
 .top {
-  background-image: url("../images/top-bg-1.jpg"); }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
   .top::before {
     content: '';
     position: absolute;
@@ -868,6 +871,31 @@ body {
     padding-top: 5px; }
     .top__social-link svg:hover {
       opacity: 1; }
+
+.about__slider {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin: 0;
+  padding: 0;
+  z-index: -1; }
+
+.about__slider-item {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1; }
+
+.about__slider-item img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1; }
+
+.slick-slider button {
+  display: none; }
 
 .products__inner {
   display: -webkit-box;

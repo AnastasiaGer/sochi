@@ -60,7 +60,10 @@
 }
 
 .top{
-  background-image: url('../images/top-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
   &::before{
     content: '';
     position: absolute;
@@ -110,6 +113,34 @@
   }
 }
 
+.about__slider{
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.about__slider-item{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.about__slider-item img{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.slick-slider button{
+  display: none;
+}
 
 .products{
   &__inner{
