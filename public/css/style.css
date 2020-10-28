@@ -1,7 +1,3 @@
-body {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300; }
-
 .contacts__form-input, .contacts__form-textarea {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400; }
@@ -14,7 +10,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700; }
 
-.title, .reviews-block__text {
+.reviews-block__text {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400; }
 
@@ -721,6 +717,7 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #fff;
+  font-family: 'Yeseva One', cursive;
   font-size: 17px;
   line-height: 26px; }
 
@@ -736,13 +733,24 @@ body {
   background-size: cover;
   position: relative;
   z-index: 1; }
+  .page-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.15; }
   .page-section__wrapper {
     min-height: 100vh;
     position: relative;
     z-index: 1; }
 
 .title {
-  font-size: 44px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 80px;
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
