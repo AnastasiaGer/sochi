@@ -83,6 +83,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 70px;
   }
   &__title{
     font-size: 96px;
@@ -284,7 +285,7 @@
       top: 30px;
       width: 245px;
       height: 45px;
-      background-image: url('../images/line-1.svg');
+      background-image: url('../images/icons/line-1.svg');
       }
     }
     &:nth-child(2){
@@ -297,7 +298,7 @@
       height: 62.5px;
       left: -450px;
       top: 150px;
-      background-image: url('../images/line-2.svg');
+      background-image: url('../images/icons/line-2.svg');
       }
     }
     &:nth-child(3){
@@ -311,7 +312,7 @@
       height: 43px;
       left: 380px;
       top: 50px;
-      background-image: url('../images/line-3.svg');
+      background-image: url('../images/icons/line-3.svg');
       }
     }
     &:nth-child(4){
@@ -385,7 +386,7 @@
   }
 
   &__box-1::before{
-    background-image: url('../images/pointer-1.svg');
+    background-image: url('../images/icons/pointer-1.svg');
     width: 229px;
     height: 114px;
     right: -140px;
@@ -395,7 +396,7 @@
   &__box-2{
     margin-top: 140px;
     &::before{
-      background-image: url('../images/pointer-2.svg');
+      background-image: url('../images/icons/pointer-2.svg');
       width: 346px;
       height: 81px;
       right: -310px;;
@@ -404,7 +405,7 @@
   }
 
   &__box-3::before{
-    background-image: url('../images/pointer-3.svg');
+    background-image: url('../images/icons/pointer-3.svg');
     width: 258px;
     height: 103px;
     left: -300px;
@@ -414,7 +415,7 @@
   &__box-4{
     margin-top: 160px;
     &::before{
-    background-image: url('../images/pointer-4.svg');
+    background-image: url('../images/icons/pointer-4.svg');
     width: 124px;
     height: 89px;
     left: -170px;

@@ -19,8 +19,8 @@ $(function(){
   $('.surf-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/arrow-prev.svg" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/arrow-next.svg" alt=""></button>',
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
     responsive: [
       {
           breakpoint: 1210,
@@ -56,8 +56,8 @@ $(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/arrow-prev.svg" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/arrow-next.svg" alt=""></button>',
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
     autoplay: true,
     speed: 4000,
     fade: true,

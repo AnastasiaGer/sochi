@@ -779,7 +779,7 @@ body {
       position: absolute;
       width: 24px;
       height: 20px;
-      background-image: url("../images/arrows-right.svg");
+      background-image: url("../images/icons/arrows-right.svg");
       top: 50%;
       right: 17px;
       -webkit-transform: translateY(-50%);
@@ -861,7 +861,8 @@ body {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-bottom: 70px; }
   .top__title {
     font-size: 96px;
     line-height: 115px;
@@ -1017,7 +1018,7 @@ body {
     top: 30px;
     width: 245px;
     height: 45px;
-    background-image: url("../images/line-1.svg"); }
+    background-image: url("../images/icons/line-1.svg"); }
   .benefits__item:nth-child(2)::before {
     content: "";
     position: absolute;
@@ -1027,7 +1028,7 @@ body {
     height: 62.5px;
     left: -450px;
     top: 150px;
-    background-image: url("../images/line-2.svg"); }
+    background-image: url("../images/icons/line-2.svg"); }
   .benefits__item:nth-child(3) {
     margin-left: 30px; }
     .benefits__item:nth-child(3)::before {
@@ -1039,7 +1040,7 @@ body {
       height: 43px;
       left: 380px;
       top: 50px;
-      background-image: url("../images/line-3.svg"); }
+      background-image: url("../images/icons/line-3.svg"); }
   .benefits__item:nth-child(4) {
     margin-left: 50px; }
     .benefits__item:nth-child(4)::before {
@@ -1107,7 +1108,7 @@ body {
     background-size: contain; }
 
 .specification__box-1::before {
-  background-image: url("../images/pointer-1.svg");
+  background-image: url("../images/icons/pointer-1.svg");
   width: 229px;
   height: 114px;
   right: -140px;
@@ -1116,14 +1117,14 @@ body {
 .specification__box-2 {
   margin-top: 140px; }
   .specification__box-2::before {
-    background-image: url("../images/pointer-2.svg");
+    background-image: url("../images/icons/pointer-2.svg");
     width: 346px;
     height: 81px;
     right: -310px;
     top: -65px; }
 
 .specification__box-3::before {
-  background-image: url("../images/pointer-3.svg");
+  background-image: url("../images/icons/pointer-3.svg");
   width: 258px;
   height: 103px;
   left: -300px;
@@ -1132,7 +1133,7 @@ body {
 .specification__box-4 {
   margin-top: 160px; }
   .specification__box-4::before {
-    background-image: url("../images/pointer-4.svg");
+    background-image: url("../images/icons/pointer-4.svg");
     width: 124px;
     height: 89px;
     left: -170px;
