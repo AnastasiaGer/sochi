@@ -874,7 +874,7 @@ body {
   .top__title {
     font-size: 96px;
     line-height: 115px;
-    margin-bottom: 25px; }
+    margin-bottom: 100px; }
   .top__text {
     margin: 25px 0 35px;
     max-width: 325px; }
@@ -963,7 +963,7 @@ body {
           transform: rotate(-90deg);
   position: absolute;
   right: 40px;
-  bottom: 80px;
+  bottom: 15px;
   height: 0;
   width: 0;
   white-space: nowrap; }
@@ -1389,7 +1389,7 @@ body {
   .top__title {
     font-size: 75px;
     line-height: 90px;
-    margin-bottom: 20px; }
+    margin-bottom: 65px; }
   .top__inner img {
     width: 80%; }
   .top__text {
@@ -1631,6 +1631,8 @@ body {
     padding-left: 0; } }
 
 @media (max-width: 787px) {
+  .top__title {
+    margin-bottom: 210px; }
   .benefits__item:nth-child(2) {
     margin-left: 0; }
   .benefits__item:nth-child(3) {

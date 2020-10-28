@@ -89,7 +89,7 @@
     font-size: 96px;
     line-height: 115px;
     @extend %sf-semibold;
-    margin-bottom: 25px;
+    margin-bottom: 100px;
   }
   &__text{
     margin: 25px 0 35px;
@@ -217,7 +217,7 @@
   transform: rotate(-90deg);
   position: absolute;
   right: 40px;
-  bottom: 80px;
+  bottom: 15px;
   height: 0;
   width: 0;
   white-space: nowrap;
