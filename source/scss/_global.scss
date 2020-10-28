@@ -34,7 +34,7 @@ body{
   overflow-x: hidden;
   position: relative;
   color: #fff;
-  @extend %ubuntu-light;
+  font-family: 'Yeseva One', cursive;
   font-size: 17px;
   line-height: 26px;
 }
@@ -46,22 +46,32 @@ body{
 }
 
 .page-section {
-  background-image: url('../images/page-bg-3.jpg');
+  background-image: url('../images/bg/bg-1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;
-  &::before{
+    &::before{
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+    background: rgba(0, 0, 0, 1);
     opacity: 0.15;
   }
+  // &::before{
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+  //   opacity: 0.15;
+  // }
   &__wrapper{
     min-height: 100vh;
     // padding: 74px 0 50px;
@@ -71,8 +81,9 @@ body{
 }
 
 .title{
-  @extend %sf-regular;
-  font-size: 44px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 80px;
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
@@ -115,7 +126,7 @@ body{
       position: absolute;
       width: 24px;
       height: 20px;
-      background-image: url('../images/arrows-right.svg');
+      background-image: url('../images/icons/arrows-right.svg');
       top: 50%;
       right: 17px;
       transform: translateY(-50%);

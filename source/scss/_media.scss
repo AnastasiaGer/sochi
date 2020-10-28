@@ -13,7 +13,7 @@
   .top__title {
     font-size: 75px;
     line-height: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 65px;
   }
 
   .top__inner img {
@@ -381,6 +381,11 @@
 // ------------------------------------------------------
 
 @media (max-width: 787px) {
+  .top__title {
+    margin-bottom: 210px;
+  }
+
+
   .benefits__item:nth-child(2) {
     margin-left: 0;
   }

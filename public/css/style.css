@@ -1,7 +1,3 @@
-body {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300; }
-
 .contacts__form-input, .contacts__form-textarea {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400; }
@@ -14,7 +10,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700; }
 
-.title, .reviews-block__text {
+.reviews-block__text {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400; }
 
@@ -721,6 +717,7 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #fff;
+  font-family: 'Yeseva One', cursive;
   font-size: 17px;
   line-height: 26px; }
 
@@ -730,7 +727,7 @@ body {
   margin: 0 auto; }
 
 .page-section {
-  background-image: url("../images/page-bg-3.jpg");
+  background-image: url("../images/bg/bg-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -743,7 +740,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+    background: black;
     opacity: 0.15; }
   .page-section__wrapper {
     min-height: 100vh;
@@ -751,7 +748,9 @@ body {
     z-index: 1; }
 
 .title {
-  font-size: 44px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 80px;
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
@@ -788,7 +787,7 @@ body {
       position: absolute;
       width: 24px;
       height: 20px;
-      background-image: url("../images/arrows-right.svg");
+      background-image: url("../images/icons/arrows-right.svg");
       top: 50%;
       right: 17px;
       -webkit-transform: translateY(-50%);
@@ -852,15 +851,6 @@ body {
   background-position: center;
   background-size: cover;
   position: relative; }
-  .top::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
-    opacity: 0.4; }
   .top__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -879,11 +869,12 @@ body {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-bottom: 70px; }
   .top__title {
     font-size: 96px;
     line-height: 115px;
-    margin-bottom: 25px; }
+    margin-bottom: 100px; }
   .top__text {
     margin: 25px 0 35px;
     max-width: 325px; }
@@ -891,7 +882,7 @@ body {
     display: inline-block;
     margin: 0 25px; }
   .top__social-link {
-    opacity: 0.5;
+    opacity: 0.8;
     -webkit-transition: all .3s;
     transition: all .3s; }
     .top__social-link:hover {
@@ -972,7 +963,7 @@ body {
           transform: rotate(-90deg);
   position: absolute;
   right: 40px;
-  bottom: 80px;
+  bottom: 15px;
   height: 0;
   width: 0;
   white-space: nowrap; }
@@ -1032,10 +1023,10 @@ body {
     background-repeat: no-repeat;
     background-position: 0 0;
     right: -55px;
-    top: 30px;
+    top: 20px;
     width: 245px;
-    height: 45px;
-    background-image: url("../images/line-1.svg"); }
+    height: 47px;
+    background-image: url("../images/icons/line-1.svg"); }
   .benefits__item:nth-child(2)::before {
     content: "";
     position: absolute;
@@ -1045,7 +1036,7 @@ body {
     height: 62.5px;
     left: -450px;
     top: 150px;
-    background-image: url("../images/line-2.svg"); }
+    background-image: url("../images/icons/line-2.svg"); }
   .benefits__item:nth-child(3) {
     margin-left: 30px; }
     .benefits__item:nth-child(3)::before {
@@ -1057,7 +1048,7 @@ body {
       height: 43px;
       left: 380px;
       top: 50px;
-      background-image: url("../images/line-3.svg"); }
+      background-image: url("../images/icons/line-3.svg"); }
   .benefits__item:nth-child(4) {
     margin-left: 50px; }
     .benefits__item:nth-child(4)::before {
@@ -1116,7 +1107,10 @@ body {
 .specification__box {
   width: 280px;
   position: relative;
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px; }
   .specification__box::before {
     content: "";
     position: absolute;
@@ -1125,23 +1119,23 @@ body {
     background-size: contain; }
 
 .specification__box-1::before {
-  background-image: url("../images/pointer-1.svg");
+  background-image: url("../images/icons/pointer-1.svg");
   width: 229px;
   height: 114px;
-  right: -140px;
-  top: 15px; }
+  right: -180px;
+  top: 25px; }
 
 .specification__box-2 {
   margin-top: 140px; }
   .specification__box-2::before {
-    background-image: url("../images/pointer-2.svg");
+    background-image: url("../images/icons/pointer-2.svg");
     width: 346px;
     height: 81px;
     right: -310px;
     top: -65px; }
 
 .specification__box-3::before {
-  background-image: url("../images/pointer-3.svg");
+  background-image: url("../images/icons/pointer-3.svg");
   width: 258px;
   height: 103px;
   left: -300px;
@@ -1150,7 +1144,7 @@ body {
 .specification__box-4 {
   margin-top: 160px; }
   .specification__box-4::before {
-    background-image: url("../images/pointer-4.svg");
+    background-image: url("../images/icons/pointer-4.svg");
     width: 124px;
     height: 89px;
     left: -170px;
@@ -1257,7 +1251,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 25px; }
+  padding: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  border-radius: 10px; }
 
 .contacts__info {
   width: 240px;
@@ -1388,7 +1389,7 @@ body {
   .top__title {
     font-size: 75px;
     line-height: 90px;
-    margin-bottom: 20px; }
+    margin-bottom: 65px; }
   .top__inner img {
     width: 80%; }
   .top__text {
@@ -1630,6 +1631,8 @@ body {
     padding-left: 0; } }
 
 @media (max-width: 787px) {
+  .top__title {
+    margin-bottom: 210px; }
   .benefits__item:nth-child(2) {
     margin-left: 0; }
   .benefits__item:nth-child(3) {
