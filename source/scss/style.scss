@@ -100,7 +100,7 @@
     margin: 0 25px;
   }
   &__social-link{
-    opacity: 0.5;
+    opacity: 0.8;
     transition: all .3s;
     &:hover {
       opacity: 1;
@@ -376,6 +376,9 @@
     width: 280px;
     position: relative;
     margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px;
     &::before{
       content: "";
       position: absolute;
@@ -542,8 +545,12 @@
 .contacts{
   &__inner{
     display: flex;
-    padding-left: 25px;
+    padding: 25px;
 
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    border-radius: 10px;
   }
   &__info{
     width: 240px;

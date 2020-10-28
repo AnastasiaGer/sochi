@@ -874,7 +874,7 @@ body {
     display: inline-block;
     margin: 0 25px; }
   .top__social-link {
-    opacity: 0.5;
+    opacity: 0.8;
     -webkit-transition: all .3s;
     transition: all .3s; }
     .top__social-link:hover {
@@ -1099,7 +1099,10 @@ body {
 .specification__box {
   width: 280px;
   position: relative;
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px; }
   .specification__box::before {
     content: "";
     position: absolute;
@@ -1240,7 +1243,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 25px; }
+  padding: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  border-radius: 10px; }
 
 .contacts__info {
   width: 240px;
