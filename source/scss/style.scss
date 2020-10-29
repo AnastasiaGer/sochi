@@ -284,18 +284,17 @@
   &__items{
     display: flex;
     flex-wrap: wrap;
-    padding: 80px;
+    padding: 40px 80px;
   }
   &__subtitle{
     font-family: 'SFProDisplay-Regular',sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 53px;
-    margin-top: 62px;
-    margin-bottom: 0;
+    padding-left: 25px;
   }
   &__text{
-    padding: 15px;
+    padding: 10px 25px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 25px;
