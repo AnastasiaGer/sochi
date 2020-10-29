@@ -1029,7 +1029,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 40px 80px; }
+  padding: 20px 80px; }
 
 .benefits__subtitle {
   font-family: 'SFProDisplay-Regular',sans-serif;
