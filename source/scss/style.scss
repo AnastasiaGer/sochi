@@ -257,23 +257,30 @@
 }
 
 .benefits{
+
+
   &__items{
     display: flex;
     flex-wrap: wrap;
     padding: 80px;
   }
   &__subtitle{
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 30px;
+    font-family: 'SFProDisplay-Regular',sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
     margin-top: 62px;
     margin-bottom: 0;
   }
   &__text{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 25px;
-    line-height: 18px;
+    line-height: 24px;
     font-weight: 300;
     font-family: 'SFProDisplay-Medium', sans-serif;
+
   }
 }
 
@@ -349,6 +356,7 @@
 .reviews-block {
   position: relative;
   padding:60px 0 40px;
+
   &__text{
     @extend %sf-regular;
     font-size: 36px;
@@ -408,23 +416,7 @@
 }
 
 .review.category-1 .review-text {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.review.category-2 .review-text {
-  background-color:#9bb64d
-}
-
-.review.category-3 .review-text {
-  background-color:#5caec6
-}
-
-.review.category-4 .review-text {
-  background-color:#c48193
-}
-
-.review.category-5 .review-text {
-  background-color:#e36451
+  background-color: rgb(194, 154, 89);
 }
 
 .slick-btn {

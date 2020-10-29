@@ -996,15 +996,19 @@ body {
   padding: 80px; }
 
 .benefits__subtitle {
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 30px;
+  font-family: 'SFProDisplay-Regular',sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
   margin-top: 62px;
   margin-bottom: 0; }
 
 .benefits__text {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 25px;
-  line-height: 18px;
+  line-height: 24px;
   font-weight: 300;
   font-family: 'SFProDisplay-Medium', sans-serif; }
 
@@ -1124,19 +1128,7 @@ body {
   padding: 10px 20px 5px 0; }
 
 .review.category-1 .review-text {
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.review.category-2 .review-text {
-  background-color: #9bb64d; }
-
-.review.category-3 .review-text {
-  background-color: #5caec6; }
-
-.review.category-4 .review-text {
-  background-color: #c48193; }
-
-.review.category-5 .review-text {
-  background-color: #e36451; }
+  background-color: #c29a59; }
 
 .slick-btn {
   position: absolute;
