@@ -10,7 +10,7 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700; }
 
-.reviews-block__text {
+.title, .reviews-block__text {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400; }
 
@@ -740,9 +740,7 @@ body {
     z-index: 1; }
 
 .title {
-  font-family: 'Yeseva One', cursive;
-  font-weight: 400;
-  font-size: 80px;
+  font-size: 44px;
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
@@ -838,51 +836,52 @@ body {
 .menu__btn {
   display: none; }
 
-.top {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative; }
-  .top__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-  .top__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 70px; }
-  .top__title {
-    font-size: 96px;
-    line-height: 115px;
-    margin-bottom: 100px; }
-  .top__text {
-    margin: 25px 0 35px;
-    max-width: 325px; }
-  .top__social-item {
-    display: inline-block;
-    margin: 0 25px; }
-  .top__social-link {
-    opacity: 0.8;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
-    .top__social-link:hover {
-      opacity: 1; }
-  .top__social-link svg {
-    padding-top: 5px; }
-    .top__social-link svg:hover {
-      opacity: 1; }
+.top__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.top__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px; }
+
+.top__title {
+  font-size: 96px;
+  line-height: 115px;
+  margin-bottom: 100px; }
+
+.top__text {
+  margin: 25px 0 35px;
+  max-width: 325px; }
+
+.top__social-item {
+  display: inline-block;
+  margin: 0 25px; }
+
+.top__social-link {
+  opacity: 0.8;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .top__social-link:hover {
+    opacity: 1; }
+
+.top__social-link svg {
+  padding-top: 5px; }
+  .top__social-link svg:hover {
+    opacity: 1; }
 
 .slick-slider button {
   display: none; }

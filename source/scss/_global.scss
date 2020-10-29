@@ -62,9 +62,8 @@ body{
 }
 
 .title{
-  font-family: 'Yeseva One', cursive;
-  font-weight: 400;
-  font-size: 80px;
+  @extend %sf-regular;
+  font-size: 44px;
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
