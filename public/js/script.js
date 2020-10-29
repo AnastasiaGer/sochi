@@ -94,7 +94,7 @@ $(function(){
     scrollingSpeed: 700,
     scrollOverflow: true,
     menu: '#header__nav',
-    anchors: ['top', 'products', 'benefits', 'specification', 'questions','contacts'],
+    anchors: ['top', 'products', 'cars', 'boats', 'benefits', 'reviews-block', 'contacts'],
   });
 
   $('.menu__btn').on('click', function(){
