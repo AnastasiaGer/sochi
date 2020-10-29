@@ -143,10 +143,6 @@
   display: none;
 }
 
-.products{
-
-}
-
 .surf-slider {
   padding-top: 20px;
 
@@ -360,6 +356,51 @@
     line-height: 18px;
   }
 }
+
+// ...
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hotel__subtitle {
+  margin-left: 120px;
+}
+
+
+.hotel_inner {
+  display: flex;
+}
+
+.hotel__images {
+  margin-right: 100px;
+  width: 500px;
+  height: 700px;
+}
+
+.hotel__text {
+  margin-bottom: 40px;
+}
+
+
+.hotel__gallery {
+  max-width: 1000px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel__gallery a {
+  margin-top: 50px;
+}
+
+
+
+
+// ...
 
 .specification{
   &__inner{

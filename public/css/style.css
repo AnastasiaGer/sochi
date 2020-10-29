@@ -732,16 +732,7 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
-  z-index: 1; }
-  .page-section::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: black;
-    opacity: 0.15; }
+  z-index: 100; }
   .page-section__wrapper {
     min-height: 100vh;
     position: relative;
@@ -1087,6 +1078,42 @@ body {
 .benefits__info-text {
   font-size: 15px;
   line-height: 18px; }
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.hotel__subtitle {
+  margin-left: 120px; }
+
+.hotel_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.hotel__images {
+  margin-right: 100px;
+  width: 500px;
+  height: 700px; }
+
+.hotel__text {
+  margin-bottom: 40px; }
+
+.hotel__gallery {
+  max-width: 1000px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.hotel__gallery a {
+  margin-top: 50px; }
 
 .specification__inner {
   display: -webkit-box;
