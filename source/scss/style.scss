@@ -260,101 +260,40 @@
   &__items{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 25px;
+    padding: 80px;
   }
-  &__item{
-    margin-bottom: 100px;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    &:nth-child(2n){
-      margin-top: 15px;
-      transform: translateY(25px);
-    }
-    &:first-child{
-      &::before{
-        content:"";
-        position: absolute;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        right: -55px;
-      top: 20px;
-      width: 245px;
-      height: 47px;
-      background-image: url('../images/icons/line-1.svg');
-      }
-    }
-    &:nth-child(2){
-      &::before{
-        content:"";
-        position: absolute;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        width: 463px;
-      height: 62.5px;
-      left: -450px;
-      top: 150px;
-      background-image: url('../images/icons/line-2.svg');
-      }
-    }
-    &:nth-child(3){
-      margin-left: 30px;
-      &::before{
-        content:"";
-        position: absolute;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        width: 254px;
-      height: 43px;
-      left: 380px;
-      top: 50px;
-      background-image: url('../images/icons/line-3.svg');
-      }
-    }
-    &:nth-child(4){
-      margin-left: 50px;
-      &::before{
-        content:"";
-        position: absolute;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-      }
-    }
+  &__subtitle{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 30px;
+    margin-top: 62px;
+    margin-bottom: 0;
   }
-  &__num{
-    font-size: 36px;
-    line-height: 41px;
-    @extend %ubuntu-bold;
-    margin-right: 10px;
-  }
-  &__img{
-    position: relative;
-    margin-right: 32px;
-    &::before{
-      content: "";
-      position: absolute;
-      width: 193px;
-      height: 128px;
-      border: 2px solid #fff;
-      right: -12px;
-      top: -12px;
-      z-index: -1;
-    }
-  }
-  &__info{
-    width: 300px;
-  }
-  &__info-title{
-    width: 123px;
-    font-size: 21px;
-    line-height: 24px;
-    @extend %ubuntu-bold;
-    margin-bottom: 10px;
-  }
-  &__info-text{
-    font-size: 15px;
+  &__text{
+    font-size: 25px;
     line-height: 18px;
+    font-weight: 300;
+    font-family: 'SFProDisplay-Medium', sans-serif;
   }
+}
+
+.statistic-advantages {
+  padding-bottom: 80px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.advantages-list__item-text {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 32px;
+
 }
 
 // ...
@@ -365,27 +304,30 @@
   padding: 0 15px;
 }
 
-.hotel__subtitle {
+.cars__subtitle {
   margin-left: 120px;
 }
 
 
-.hotel_inner {
+.cars_inner {
   display: flex;
 }
 
-.hotel__images {
-  margin-right: 100px;
+.cars__images {
+  margin-right: 90px;
   width: 500px;
   height: 700px;
 }
 
-.hotel__text {
+.cars__text {
+  font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
   margin-bottom: 40px;
 }
 
 
-.hotel__gallery {
+.cars__gallery {
   max-width: 1000px;
   margin-top: 30px;
   display: flex;
@@ -393,93 +335,15 @@
   justify-content: space-between;
 }
 
-.hotel__gallery a {
+.cars__gallery a {
   margin-top: 50px;
+  margin-right: 10px;
 }
 
 
 
 
 // ...
-
-.specification{
-  &__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 25px;
-  }
-  &__item--center{
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  &__box{
-    width: 280px;
-    position: relative;
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 10px;
-    &::before{
-      content: "";
-      position: absolute;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-    }
-  }
-
-  &__box-1::before{
-    background-image: url('../images/icons/pointer-1.svg');
-    width: 229px;
-    height: 114px;
-    right: -180px;
-    top: 25px;
-  }
-
-  &__box-2{
-    margin-top: 140px;
-    &::before{
-      background-image: url('../images/icons/pointer-2.svg');
-      width: 346px;
-      height: 81px;
-      right: -310px;;
-      top: -65px;
-    }
-  }
-
-  &__box-3::before{
-    background-image: url('../images/icons/pointer-3.svg');
-    width: 258px;
-    height: 103px;
-    left: -300px;
-    top: 15px;
-  }
-
-  &__box-4{
-    margin-top: 160px;
-    &::before{
-    background-image: url('../images/icons/pointer-4.svg');
-    width: 124px;
-    height: 89px;
-    left: -170px;
-    top: -70px;
-    }
-  }
-
-  &__box-title{
-    font-size: 21px;
-    line-height: 28px;
-    @extend %ubuntu-bold;
-    margin-bottom: 10px;
-  }
-  &__box-text{
-    font-size: 15px;
-    line-height: 18px;
-    font-weight: 300;
-
-  }
-}
 
 
 .reviews-block {
