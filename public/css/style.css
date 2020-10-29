@@ -1068,13 +1068,12 @@ body {
   margin-top: 32px; }
 
 .reviews-block {
-  position: relative;
-  padding: 60px 0 40px; }
+  position: relative; }
   .reviews-block__text {
     font-size: 36px;
     line-height: 53px;
     padding-left: 25px;
-    margin-bottom: 55px; }
+    margin-bottom: 30px; }
 
 .review {
   margin: 0 auto;
