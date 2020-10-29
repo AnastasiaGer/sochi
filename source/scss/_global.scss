@@ -43,6 +43,7 @@ body{
   max-width: 1270px;
   padding: 0 15px;
   margin: 0 auto;
+
 }
 
 .page-section {
@@ -51,17 +52,17 @@ body{
   background-position: center;
   background-size: cover;
   position: relative;
-  z-index: 1;
-    &::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 1);
-    opacity: 0.15;
-  }
+  z-index: 100;
+  //   &::before{
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: rgba(0, 0, 0, 1);
+  //   opacity: 0.15;
+  // }
   // &::before{
   //   content: '';
   //   position: absolute;
