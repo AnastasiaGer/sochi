@@ -743,8 +743,8 @@ body {
   font-size: 44px;
   line-height: 53px;
   padding-left: 25px;
-  margin-bottom: 35px;
-  padding-top: 180px; }
+  margin-bottom: 15px;
+  padding-top: 114px; }
 
 .scroll__btn {
   padding: 13px 0 30px;
@@ -965,22 +965,22 @@ body {
     .slider-btn.slick-disabled svg {
       stroke: #fff; }
 
-.cars-slider .slick-btn {
-  position: absolute;
-  top: 305px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 5;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  outline: none; }
-
-.cars-slider .slick-prev {
-  left: -75px; }
-
-.cars-slider .slick-next {
-  right: -75px; }
+.cars-slider {
+  padding-top: 20px; }
+  .cars-slider .slick-btn {
+    position: absolute;
+    top: 305px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none; }
+  .cars-slider .slick-prev {
+    left: -75px; }
+  .cars-slider .slick-next {
+    right: -75px; }
 
 .cars-box {
   display: -webkit-box !important;
