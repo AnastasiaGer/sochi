@@ -1032,7 +1032,7 @@ body {
   padding: 20px 80px 0 80px; }
 
 .benefits__subtitle {
-  font-family: 'SFProDisplay-Regular',sans-serif;
+  font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 53px;
@@ -1271,6 +1271,118 @@ body {
     font-size: 13px;
     line-height: 15;
     color: rgba(255, 255, 255, 0.64); }
+
+.about__slider {
+  width: 50%;
+  position: relative; }
+
+.about__slider__btn {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  cursor: pointer; }
+
+.about__slider__btnprev {
+  left: -15px; }
+
+.about__slider__btnnext {
+  right: -15px; }
+
+.about__container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.about__inner {
+  position: relative; }
+
+.about__body {
+  width: 50%;
+  margin-left: auto;
+  padding-left: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  position: relative; }
+
+.about__body-btn {
+  bottom: -60px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0; }
+
+.about__body-btn a {
+  position: relative; }
+
+.about__body-btn a span {
+  padding: 17px 17px 15px 57px; }
+  .about__body-btn a span::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    top: 50%;
+    left: 155px; }
+  .about__body-btn a span::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    background-image: url("../images/icons/arrows-right.svg");
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.about__text-title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px; }
+
+.about__text {
+  padding-right: 10px;
+  margin: 0; }
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none; }
+
+.slick-prev {
+  left: 0; }
+
+.slick-next {
+  right: 0; }
 
 @media (max-width: 1366px) {
   body {
