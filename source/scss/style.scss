@@ -67,6 +67,13 @@
 }
 
 .top {
+
+  background-image: url('../images/bg/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
   &__wrapper {
     display: flex;
     align-items: flex-end;
@@ -121,6 +128,25 @@
 
 .surf-slider {
   padding-top: 20px;
+
+  .slick-btn {
+    position: absolute;
+    top: 305px;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .slick-prev {
+    left: -75px;
+  }
+
+  .slick-next {
+    right: -75px;
+  }
 
   .slider-arrows {
     top: 50px;
