@@ -107,5 +107,19 @@ $(function(){
     $('.menu__list').removeClass('menu__list--active');
   });
 
+  $('.about__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
+    autoplay: true,
+    fade: true,
+    responsive: [{
+      breakpoint: 601,
+      settings: {
+        arrows: false
+      }
+    }]
+  });
 
 });

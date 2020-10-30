@@ -3,7 +3,7 @@
 @import "fonts";
 @import "global";
 
-.header{
+.header {
   position: fixed;
   left: 0;
   top: 0;
@@ -11,7 +11,8 @@
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
-  &__inner{
+
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +22,8 @@
     line-height: 17px;
     @extend %ubuntu-medium;
   }
-  &__btn{
+
+  &__btn {
     color: #fff;
     background-color: transparent;
     padding: 6px 28px;
@@ -32,79 +34,92 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: all .3s;
+
     &:hover {
       background-color: #fff;
       color: #1C1C1C;
     }
   }
-  &__phone{
+
+  &__phone {
     @extend %ubuntu-bold;
     font-size: 16px;
     line-height: 18px;
   }
 }
 
-.menu{
-  &__list-item{
+.menu {
+  &__list-item {
     display: inline-block;
-    & + .menu__list-item{
+
+    &+.menu__list-item {
       padding-left: 20px;
     }
   }
-  &__list-phone{
+
+  &__list-phone {
     display: none;
   }
-  &__btn{
+
+  &__btn {
     display: none;
   }
 }
 
-.top{
-  &__wrapper{
+.top {
+  &__wrapper {
     display: flex;
     align-items: flex-end;
   }
-  &__inner{
+
+  &__inner {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     margin-bottom: 70px;
   }
-  &__title{
+
+  &__title {
     font-size: 96px;
     line-height: 115px;
     @extend %sf-semibold;
     margin-bottom: 100px;
   }
-  &__text{
+
+  &__text {
     margin: 25px 0 35px;
     max-width: 325px;
   }
-  &__social-item{
+
+  &__social-item {
     display: inline-block;
     margin: 0 25px;
   }
-  &__social-link{
+
+  &__social-link {
     opacity: 0.8;
     transition: all .3s;
+
     &:hover {
       opacity: 1;
     }
   }
-  &__social-link svg{
+
+  &__social-link svg {
     padding-top: 5px;
+
     &:hover {
       opacity: 1;
     }
   }
 }
 
-.slick-slider button{
+.slick-slider button {
   display: none;
 }
 
-.surf-slider{
+.surf-slider {
   padding-top: 20px;
 
   .slider-arrows {
@@ -137,22 +152,25 @@
 }
 
 .surf-box {
-  &__wrapper{
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  &__wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
- &__inner{
-  min-height: 550px;
-  background: rgba(#1C2121, .85);
-  position: relative;
-  transition: all .5s;
-      &:hover{
-          background: rgba(#1C2121, .3);
-          .surf-box__inner-btn{
-              display: block;
-          }
+
+  &__inner {
+    min-height: 550px;
+    background: rgba(#1C2121, .85);
+    position: relative;
+    transition: all .5s;
+
+    &:hover {
+      background: rgba(#1C2121, .3);
+
+      .surf-box__inner-btn {
+        display: block;
       }
+    }
   }
 }
 
@@ -193,7 +211,7 @@
   display: none;
 }
 
-.slider-btn{
+.slider-btn {
   padding: 16px 26px;
   border: none;
   background-color: #fff;
@@ -203,22 +221,26 @@
   cursor: pointer;
   z-index: 5;
 
-  svg{
+  svg {
     stroke: #000;
   }
-  &__left{
+
+  &__left {
     right: 60px;
   }
-  &.slick-disabled{
+
+  &.slick-disabled {
     background-color: #000;
-    svg{
+
+    svg {
       stroke: #fff;
     }
   }
 }
 
-.cars-slider{
+.cars-slider {
   padding-top: 20px;
+
   .slick-btn {
     position: absolute;
     top: 305px;
@@ -252,15 +274,15 @@
   height: 700px;
 }
 
-.cars__content{
+.cars__content {
   width: 500px;
   margin-right: 90px;
 }
 
 .cars__text {
   font-weight: 800;
-    font-size: 32px;
-    line-height: 32px;
+  font-size: 32px;
+  line-height: 32px;
   margin-bottom: 40px;
 }
 
@@ -278,22 +300,24 @@
   margin-right: 10px;
 }
 
-.benefits{
+.benefits {
 
 
-  &__items{
+  &__items {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 80px 0 80px;
   }
-  &__subtitle{
-    font-family: 'SFProDisplay-Regular',sans-serif;
+
+  &__subtitle {
+    font-family: 'SFProDisplay-Regular', sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 53px;
     padding-left: 25px;
   }
-  &__text{
+
+  &__text {
     padding: 10px 25px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -327,7 +351,7 @@
 .reviews-block {
   position: relative;
 
-  &__text{
+  &__text {
     @extend %sf-regular;
     font-size: 36px;
     line-height: 53px;
@@ -342,7 +366,7 @@
   width: 100%;
   max-width: 600px;
   flex: 0 0 auto;
-  text-align:center
+  text-align: center
 }
 
 .image-cover {
@@ -352,7 +376,7 @@
   width: 180px;
   height: 150px;
   overflow: hidden;
-  box-shadow:0 0 5px 0 #fff;
+  box-shadow: 0 0 5px 0 #fff;
   margin-bottom: 10px;
 }
 
@@ -362,7 +386,7 @@
   border-radius: 6px;
   color: #fff;
   font-weight: 300;
-  font-style:italic
+  font-style: italic
 }
 
 .reviews-carousel .review .review-text h3 {
@@ -370,11 +394,11 @@
   font-weight: 400;
   margin-bottom: 10px;
   font-size: 20px;
-  font-style:normal
+  font-style: normal
 }
 
 .reviews-carousel .review .review-text p {
-  text-align:justify
+  text-align: justify
 }
 
 .reviews-carousel .review .name {
@@ -382,7 +406,7 @@
   color: #fff;
   font-style: italic;
   text-align: right;
-  padding:10px 20px 5px 0
+  padding: 10px 20px 5px 0
 }
 
 .review.category-1 .review-text {
@@ -409,8 +433,8 @@
 }
 
 
-.contacts{
-  &__inner{
+.contacts {
+  &__inner {
     display: flex;
     padding: 25px;
 
@@ -419,49 +443,59 @@
     width: 50%;
     border-radius: 10px;
   }
-  &__info{
+
+  &__info {
     width: 240px;
     margin-right: 60px;
   }
-  &__info-box{
+
+  &__info-box {
     margin-bottom: 30px;
   }
-  &__info-title{
+
+  &__info-title {
     font-size: 21px;
     line-height: 24px;
     @extend %ubuntu-bold;
     margin: 0 0 13px;
   }
+
   &__info-phone,
-  &__info-email{
+  &__info-email {
     font-size: 15px;
     line-height: 18px;
   }
-  &__info-email:hover{
+
+  &__info-email:hover {
     text-decoration: underline;
   }
-  &__form{
+
+  &__form {
     width: 570px;
     margin-right: 106px;
   }
-  &__form-title{
+
+  &__form-title {
     font-size: 21px;
     line-height: 24px;
     @extend %ubuntu-bold;
     margin: 0 0 13px;
   }
-  &__form-text{
+
+  &__form-text {
     font-size: 15px;
     line-height: 18px;
     margin: 0 0 12px;
   }
-  &__form-line{
+
+  &__form-line {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
+
   &__form-input,
-  &__form-textarea{
+  &__form-textarea {
     border: none;
     background: rgba(0, 0, 0, 0.5);
     font-size: 13px;
@@ -469,23 +503,25 @@
     @extend %ubuntu-regular;
     padding: 15px;
     color: #fff;
-    &::placeholder{
+
+    &::placeholder {
       color: rgba(#fff, .4);
     }
   }
 
-  &__form-input{
+  &__form-input {
     width: 49%;
     background: rgba(0, 0, 0, 0.5);
   }
 
-  &__form-textarea{
+  &__form-textarea {
     min-height: 144px;
     width: 100%;
     resize: none;
     margin-bottom: 20px;
   }
-  &__form-btn{
+
+  &__form-btn {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 16px;
@@ -498,38 +534,171 @@
     background-color: transparent;
     cursor: pointer;
     transition: all .3s;
+
     &:hover {
       background-color: #fff;
       color: #1C1C1C;
     }
   }
-  &__social-list{
+
+  &__social-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  &__social-item{
+
+  &__social-item {
     margin: 14px 0;
   }
-  &__social-link{
+
+  &__social-link {
     opacity: 0.5;
-    &:hover{
+
+    &:hover {
       opacity: 1;
     }
   }
 }
 
-.footer{
+.footer {
   position: absolute;
   bottom: 32px;
   left: 0;
   right: 0;
-  &__copy{
+
+  &__copy {
     text-align: right;
     font-size: 13px;
     line-height: 15;
     color: rgba(#fff, .64);
   }
+}
+
+
+.about__slider {
+  width: 50%;
+  position: relative;
+}
+
+
+.about__slider__btn {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.about__slider__btnprev {
+  left: -15px;
+}
+
+.about__slider__btnnext {
+  right: -15px;
+}
+
+
+.about__container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.about__inner {
+  position: relative;
+}
+
+
+.about__body {
+  width: 50%;
+  margin-left: auto;
+  padding-left: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  position: relative;
+}
+
+
+.about__body-btn {
+  bottom: -60px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+
+}
+
+.about__body-btn a{
+  position: relative;
+}
+.about__body-btn a span {
+  padding: 17px 17px 15px 57px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    top: 50%;
+    left: 155px;
+
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    background-image: url('../images/icons/arrows-right.svg');
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transform: rotate(180deg);
+  }
+}
+
+
+.about__text-title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.about__text {
+  padding-right: 10px;
+  margin: 0;
+}
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
 }
 
 @import "media";
