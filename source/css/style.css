@@ -1444,6 +1444,9 @@ body {
 .slick-next {
   right: 0; }
 
+.page__social-list {
+  padding-left: 130px; }
+
 @media (max-width: 1366px) {
   body {
     font-size: 16px;
