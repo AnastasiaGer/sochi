@@ -1395,6 +1395,27 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
+.about__body-btnmore {
+  bottom: -60px;
+  position: absolute;
+  text-align: center;
+  left: -520px; }
+
+.about__body-btnmore a span {
+  padding: 17px 30px 15px 45px; }
+  .about__body-btnmore a span::after {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 50px;
+    background-image: url("../images/icons/arrow-prev.svg");
+    top: 35%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+
 .about__text-title {
   font-weight: normal;
   font-size: 18px;
