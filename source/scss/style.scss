@@ -718,17 +718,21 @@
   left: -520px;
 }
 
-.about__body-btnmore a span{
-  padding: 17px 30px 15px 45px;
+.about__body-btnmore a span {
+  padding: 17px 15px 15px 65px;
+
+  &::before {
+    display: none;
+  }
 
   &::after {
     content: '';
     position: absolute;
-    width: 44px;
-    height: 50px;
+    width: 40px;
+    height: 60px;
     background-image: url('../images/icons/arrow-prev.svg');
-    top: 35%;
-    left: 15px;
+    top: 20%;
+    left: 8px;
     transform: translateY(-50%);
     transform: rotate(-90deg);
   }
