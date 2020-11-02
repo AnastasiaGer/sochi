@@ -1069,7 +1069,7 @@ body {
 .benefits__subtitle {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 42px;
   line-height: 53px;
   padding-left: 25px; }
 
@@ -1077,10 +1077,9 @@ body {
   padding: 10px 25px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 25px;
-  line-height: 24px;
-  font-weight: 300;
-  font-family: 'SFProDisplay-Medium', sans-serif; }
+  font-size: 22px;
+  font-family: 'Yeseva One', cursive;
+  line-height: 26px; }
 
 .statistic-advantages {
   padding-bottom: 80px; }
@@ -1132,7 +1131,7 @@ body {
   margin-bottom: 10px; }
 
 .reviews-carousel .review .review-text {
-  background-color: #dca852;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 6px;
   color: #fff;
@@ -1157,7 +1156,7 @@ body {
   padding: 10px 20px 5px 0; }
 
 .review.category-1 .review-text {
-  background-color: #c29a59; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .slick-btn {
   position: absolute;
