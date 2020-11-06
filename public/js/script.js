@@ -6,15 +6,10 @@ $(function(){
     nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
     responsive: [
       {
-          breakpoint: 1210,
+          breakpoint: 1100,
           settings: {
-              slidesToShow: 3
-          }
-      },
-      {
-          breakpoint: 900,
-          settings: {
-              slidesToShow: 2
+              slidesToShow: 2,
+              centerMode: true
           }
       },
       {
@@ -40,34 +35,6 @@ $(function(){
     arrows: true,
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
-    responsive: [
-      {
-          breakpoint: 1210,
-          settings: {
-              slidesToShow: 3
-          }
-      },
-      {
-          breakpoint: 900,
-          settings: {
-              slidesToShow: 2
-          }
-      },
-      {
-          breakpoint: 720,
-          settings: {
-              slidesToShow: 1,
-              centerMode: true
-          }
-      },
-      {
-          breakpoint: 426,
-          settings: {
-              slidesToShow: 1,
-              centerMode: false,
-          }
-      }
-  ]
   });
 
 
