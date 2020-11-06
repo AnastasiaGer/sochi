@@ -1144,7 +1144,7 @@ body {
           justify-content: space-between;
   height: 456px; }
   .benefits__box-img {
-    width: 35%;
+    width: 30%;
     height: 100%;
     aspect-ratio: attr(width)/attr(height); }
 
