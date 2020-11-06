@@ -143,12 +143,6 @@ sup {
 
 /* Embedded content
    ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none; }
-
 /* Forms
    ========================================================================== */
 /**
@@ -349,9 +343,6 @@ template {
   overflow: hidden;
   margin: 0;
   padding: 0; }
-
-.slick-list:focus {
-  outline: none; }
 
 .slick-list.dragging {
   cursor: pointer;
@@ -767,21 +758,18 @@ body {
 .btn {
   font-weight: 800;
   font-size: 32px;
-  line-height: 32px; }
+  line-height: 32px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  position: relative;
+  background-color: transparent; }
   .btn span {
     padding: 17px 57px 15px 17px;
-    background-color: #c29a59;
+    background: #c29a59;
     display: inline-block;
-    margin-left: 19px;
-    position: relative; }
-    .btn span::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 1px;
-      background-color: #fff;
-      top: 50%;
-      left: -10px; }
+    margin-left: 19px; }
+    .btn span:hover, .btn span:focus, .btn span:active {
+      background: #876b3e; }
     .btn span::after {
       content: '';
       position: absolute;
@@ -966,8 +954,7 @@ body {
     z-index: 5;
     cursor: pointer;
     background-color: transparent;
-    border: none;
-    outline: none; }
+    border: none; }
   .surf-slider .slick-prev {
     left: -75px; }
   .surf-slider .slick-next {
@@ -998,7 +985,8 @@ body {
   .surf-box__inner:hover {
     background: rgba(28, 33, 33, 0.3); }
     .surf-box__inner:hover .surf-box__inner-btn {
-      display: block; }
+      display: block;
+      cursor: pointer; }
 
 .surf-box__inner-title {
   font-weight: 800;
@@ -1059,8 +1047,7 @@ body {
     z-index: 5;
     cursor: pointer;
     background-color: transparent;
-    border: none;
-    outline: none; }
+    border: none; }
   .cars-slider .slick-prev {
     left: -75px; }
   .cars-slider .slick-next {
@@ -1272,8 +1259,7 @@ body {
   z-index: 5;
   cursor: pointer;
   background-color: transparent;
-  border: none;
-  outline: none; }
+  border: none; }
 
 .slick-prev {
   left: -75px; }
@@ -1480,22 +1466,14 @@ body {
 
 .about__body-btn a span {
   padding: 17px 30px 15px 45px; }
-  .about__body-btn a span::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 1px;
-    background-color: #fff;
-    top: 50%;
-    left: 150px; }
   .about__body-btn a span::after {
     content: '';
     position: absolute;
     width: 24px;
     height: 20px;
     background-image: url("../images/icons/arrows-right.svg");
-    top: 35%;
-    left: 15px;
+    top: 25%;
+    left: 30px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     -webkit-transform: rotate(180deg);
@@ -1517,8 +1495,8 @@ body {
     width: 40px;
     height: 60px;
     background-image: url("../images/icons/arrow-prev.svg");
-    top: 20%;
-    left: 8px;
+    top: -11%;
+    left: 28px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     -webkit-transform: rotate(-90deg);
@@ -1540,9 +1518,7 @@ body {
           transform: translateY(-50%);
   z-index: 5;
   cursor: pointer;
-  background-color: transparent;
-  border: none;
-  outline: none; }
+  background-color: transparent; }
 
 .slick-prev {
   left: 0; }

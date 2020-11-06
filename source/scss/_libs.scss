@@ -141,13 +141,6 @@ sup {
 /* Embedded content
    ========================================================================== */
 
-/**
- * Remove the border on images inside links in IE 10.
- */
-
-img {
-  border-style: none;
-}
 
 /* Forms
    ========================================================================== */
@@ -378,10 +371,7 @@ template {
     margin: 0;
     padding: 0;
 }
-.slick-list:focus
-{
-    outline: none;
-}
+
 .slick-list.dragging
 {
     cursor: pointer;

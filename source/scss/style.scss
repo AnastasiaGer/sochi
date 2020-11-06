@@ -204,7 +204,6 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    outline: none;
   }
 
   .slick-prev {
@@ -262,6 +261,7 @@
 
       .surf-box__inner-btn {
         display: block;
+        cursor: pointer;
       }
     }
   }
@@ -342,7 +342,6 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    outline: none;
   }
 
   .slick-prev {
@@ -395,7 +394,7 @@
 }
 
 
-.cars__gallery-img{
+.cars__gallery-img {
   opacity: 1;
   display: block;
   transition: .5s ease;
@@ -571,7 +570,6 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  outline: none;
 }
 
 .slick-prev {
@@ -802,25 +800,14 @@
 .about__body-btn a span {
   padding: 17px 30px 15px 45px;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 1px;
-    background-color: #fff;
-    top: 50%;
-    left: 150px;
-
-  }
-
   &::after {
     content: '';
     position: absolute;
     width: 24px;
     height: 20px;
     background-image: url('../images/icons/arrows-right.svg');
-    top: 35%;
-    left: 15px;
+    top: 25%;
+    left: 30px;
     transform: translateY(-50%);
     transform: rotate(180deg);
   }
@@ -846,8 +833,8 @@
     width: 40px;
     height: 60px;
     background-image: url('../images/icons/arrow-prev.svg');
-    top: 20%;
-    left: 8px;
+    top: -11%;
+    left: 28px;
     transform: translateY(-50%);
     transform: rotate(-90deg);
   }
@@ -872,8 +859,6 @@
   z-index: 5;
   cursor: pointer;
   background-color: transparent;
-  border: none;
-  outline: none;
 }
 
 .slick-prev {

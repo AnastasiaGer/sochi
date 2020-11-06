@@ -97,22 +97,20 @@ body {
   font-weight: 800;
   font-size: 32px;
   line-height: 32px;
+  transition: all 300ms ease;
+  position: relative;
+  background-color: transparent;
 
   span {
     padding: 17px 57px 15px 17px;
-    background-color: rgb(194, 154, 89);
+    background: rgb(194, 154, 89);
     display: inline-block;
     margin-left: 19px;
-    position: relative;
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 1px;
-      background-color: #fff;
-      top: 50%;
-      left: -10px;
+    &:hover,
+    &:focus,
+    &:active {
+      background: rgb(135, 107, 62);
     }
 
     &::after {
