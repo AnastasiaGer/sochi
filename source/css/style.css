@@ -1141,7 +1141,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  height: 456px; }
   .benefits__box-img {
     width: 35%;
     height: 100%;
@@ -1153,13 +1154,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px 80px 0 80px; }
+  padding: 20px; }
 
 .benefits__subtitle {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400;
-  font-size: 42px;
-  line-height: 53px;
+  font-size: 32px;
   padding-left: 25px;
   margin-bottom: 0; }
 
@@ -1167,13 +1167,13 @@ body {
   padding: 10px 25px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Yeseva One', cursive;
-  line-height: 24px;
+  line-height: 22px;
   width: 60%; }
 
 .statistic-advantages {
-  padding-bottom: 80px; }
+  padding-bottom: 20px; }
 
 .advantages-list {
   display: -webkit-box;
@@ -1195,9 +1195,9 @@ body {
 
 .advantages-list__item-text {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Yeseva One', cursive;
-  line-height: 24px;
+  line-height: 22px;
   margin-top: 12px; }
 
 .advantages-list__item-img {
