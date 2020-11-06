@@ -392,6 +392,14 @@
 }
 
 .benefits {
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    &-img{
+      width: 35%;
+      height: auto;
+    }
+  }
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -413,7 +421,7 @@
     font-size: 22px;
     font-family: 'Yeseva One', cursive;
     line-height: 26px;
-
+width: 60%;
   }
 }
 
@@ -423,10 +431,18 @@
 
 .advantages-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
+
+.advantages-list__item{
+  padding: 10px 25px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+}
+
 
 .advantages-list__item-text {
   font-weight: bold;
@@ -434,6 +450,10 @@
   line-height: 30px;
   margin-top: 32px;
 
+}
+
+.advantages-list__item-img{
+  fill: #ECB84C;
 }
 
 .reviews-block {
