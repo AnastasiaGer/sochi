@@ -1104,9 +1104,36 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.cars__gallery a {
+.cars__gallery-item {
   margin-top: 50px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  position: relative; }
+
+.cars__gallery-img {
+  opacity: 1;
+  display: block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.middle {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+.cars__gallery-item:hover .cars__gallery-img {
+  opacity: 0.3; }
+
+.cars__gallery-item:hover .middle {
+  opacity: 1; }
 
 .benefits__box {
   display: -webkit-box;
