@@ -51,7 +51,8 @@
 
     &:hover {
       color: #1C1C1C;
-      &:before{
+
+      &:before {
         position: absolute;
         content: '';
         width: 100%;
@@ -90,16 +91,17 @@
   }
 }
 
-.menu__list-link{
+.menu__list-link {
   transition: all .3s;
   padding: 15px 0 14px;
   position: relative;
+
   &:hover {
     color: #1C62CD;
   }
 }
 
-.menu__list-link::before{
+.menu__list-link::before {
   content: "";
   position: absolute;
   width: 0;
@@ -111,7 +113,7 @@
   transition: all .3s;
 }
 
-.menu__list-link:hover::before{
+.menu__list-link:hover::before {
   width: 100%;
   right: 0;
   left: 0;
@@ -386,54 +388,112 @@
   justify-content: space-between;
 }
 
-.cars__gallery a {
+.cars__gallery-item {
   margin-top: 50px;
   margin-right: 10px;
+  position: relative;
 }
 
+
+.cars__gallery-img{
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cars__gallery-item:hover .cars__gallery-img {
+  opacity: 0.3;
+}
+
+.cars__gallery-item:hover .middle {
+  opacity: 1;
+}
+
+
 .benefits {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    height: 456px;
+
+    &-img {
+      width: 35%;
+      height: 100%;
+      aspect-ratio: attr(width) / attr(height);
+    }
+  }
+
   &__items {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 80px 0 80px;
+    padding: 20px;
   }
 
   &__subtitle {
     font-family: 'SFProDisplay-Regular', sans-serif;
     font-weight: 400;
-    font-size: 42px;
-    line-height: 53px;
+    font-size: 32px;
     padding-left: 25px;
+    margin-bottom: 0;
   }
 
   &__text {
     padding: 10px 25px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Yeseva One', cursive;
-    line-height: 26px;
-
+    line-height: 22px;
+    width: 60%;
   }
 }
 
 .statistic-advantages {
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 .advantages-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
+.advantages-list__item {
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+
+
 .advantages-list__item-text {
   font-weight: bold;
-  font-size: 22px;
-  line-height: 30px;
-  margin-top: 32px;
+  font-size: 18px;
+  font-family: 'Yeseva One', cursive;
+  line-height: 22px;
+  margin-top: 12px;
 
+}
+
+.advantages-list__item-img {
+  fill: #ECB84C;
+}
+
+.advantages-list__item-text {
+  margin: 0;
 }
 
 .reviews-block {
@@ -460,9 +520,11 @@
 .image-cover {
   display: inline-block !important;
   border-radius: 50%;
+  width: 50%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+
   position: relative;
-  width: 180px;
-  height: 150px;
   overflow: hidden;
   box-shadow: 0 0 5px 0 #fff;
   margin-bottom: 10px;
