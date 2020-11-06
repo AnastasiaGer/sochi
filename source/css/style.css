@@ -1117,7 +1117,8 @@ body {
           justify-content: space-between; }
   .benefits__box-img {
     width: 35%;
-    height: auto; }
+    height: 100%;
+    aspect-ratio: attr(width)/attr(height); }
 
 .benefits__items {
   display: -webkit-box;
@@ -1132,15 +1133,16 @@ body {
   font-weight: 400;
   font-size: 42px;
   line-height: 53px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  margin-bottom: 0; }
 
 .benefits__text {
   padding: 10px 25px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Yeseva One', cursive;
-  line-height: 26px;
+  line-height: 24px;
   width: 60%; }
 
 .statistic-advantages {
@@ -1166,12 +1168,16 @@ body {
 
 .advantages-list__item-text {
   font-weight: bold;
-  font-size: 22px;
-  line-height: 30px;
-  margin-top: 32px; }
+  font-size: 20px;
+  font-family: 'Yeseva One', cursive;
+  line-height: 24px;
+  margin-top: 12px; }
 
 .advantages-list__item-img {
   fill: #ECB84C; }
+
+.advantages-list__item-text {
+  margin: 0; }
 
 .reviews-block {
   position: relative; }
@@ -1194,9 +1200,10 @@ body {
 .image-cover {
   display: inline-block !important;
   border-radius: 50%;
+  width: 50%;
+  height: auto;
+  aspect-ratio: attr(width)/attr(height);
   position: relative;
-  width: 180px;
-  height: 150px;
   overflow: hidden;
   -webkit-box-shadow: 0 0 5px 0 #fff;
           box-shadow: 0 0 5px 0 #fff;

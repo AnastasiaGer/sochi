@@ -51,7 +51,8 @@
 
     &:hover {
       color: #1C1C1C;
-      &:before{
+
+      &:before {
         position: absolute;
         content: '';
         width: 100%;
@@ -90,16 +91,17 @@
   }
 }
 
-.menu__list-link{
+.menu__list-link {
   transition: all .3s;
   padding: 15px 0 14px;
   position: relative;
+
   &:hover {
     color: #1C62CD;
   }
 }
 
-.menu__list-link::before{
+.menu__list-link::before {
   content: "";
   position: absolute;
   width: 0;
@@ -111,7 +113,7 @@
   transition: all .3s;
 }
 
-.menu__list-link:hover::before{
+.menu__list-link:hover::before {
   width: 100%;
   right: 0;
   left: 0;
@@ -392,14 +394,17 @@
 }
 
 .benefits {
-  &__box{
+  &__box {
     display: flex;
     justify-content: space-between;
-    &-img{
+
+    &-img {
       width: 35%;
-      height: auto;
+      height: 100%;
+      aspect-ratio: attr(width) / attr(height);
     }
   }
+
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -412,16 +417,17 @@
     font-size: 42px;
     line-height: 53px;
     padding-left: 25px;
+    margin-bottom: 0;
   }
 
   &__text {
     padding: 10px 25px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Yeseva One', cursive;
-    line-height: 26px;
-width: 60%;
+    line-height: 24px;
+    width: 60%;
   }
 }
 
@@ -436,24 +442,29 @@ width: 60%;
   text-align: center;
 }
 
-.advantages-list__item{
+.advantages-list__item {
   padding: 10px 25px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-right: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
 }
 
 
 .advantages-list__item-text {
   font-weight: bold;
-  font-size: 22px;
-  line-height: 30px;
-  margin-top: 32px;
+  font-size: 20px;
+  font-family: 'Yeseva One', cursive;
+  line-height: 24px;
+  margin-top: 12px;
 
 }
 
-.advantages-list__item-img{
+.advantages-list__item-img {
   fill: #ECB84C;
+}
+
+.advantages-list__item-text {
+  margin: 0;
 }
 
 .reviews-block {
@@ -480,9 +491,11 @@ width: 60%;
 .image-cover {
   display: inline-block !important;
   border-radius: 50%;
+  width: 50%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+
   position: relative;
-  width: 180px;
-  height: 150px;
   overflow: hidden;
   box-shadow: 0 0 5px 0 #fff;
   margin-bottom: 10px;
