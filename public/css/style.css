@@ -1128,8 +1128,7 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 456px; }
+          justify-content: space-between; }
   .benefits__box-img {
     width: 30%;
     height: 100%;
@@ -1157,7 +1156,8 @@ body {
   font-size: 18px;
   font-family: 'Yeseva One', cursive;
   line-height: 22px;
-  width: 60%; }
+  width: 60%;
+  margin-bottom: 10px; }
 
 .statistic-advantages {
   padding-bottom: 20px; }
@@ -1751,7 +1751,17 @@ body {
   .specification__box-2::before,
   .specification__box-3::before,
   .specification__box-4::before {
-    display: none; } }
+    display: none; }
+  .about__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 @media (max-width: 940px) {
   .products__inner {
@@ -1764,6 +1774,34 @@ body {
     margin-left: auto; }
   .products__slider-box {
     padding-bottom: 80px; }
+  .benefits__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .advantages-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left; }
+  .advantages-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+    width: 60%; }
+  .advantages-list__item-text {
+    margin-left: 10px; }
   .contacts__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }

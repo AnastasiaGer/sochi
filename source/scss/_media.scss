@@ -330,6 +330,12 @@
   .specification__box-4::before {
     display: none;
   }
+
+  .about__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 // ------------------------------------------------------
@@ -351,6 +357,32 @@
 
   .products__slider-box {
     padding-bottom: 80px;
+  }
+
+  .benefits {
+    &__box {
+      flex-direction: column;
+
+    }
+  }
+
+  .advantages-list {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .advantages-list__item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+    width: 60%;
+  }
+
+  .advantages-list__item-text {
+    margin-left: 10px;
   }
 
   .contacts__inner {
@@ -424,21 +456,21 @@
   }
 
   .reviews-carousel .review .review-text {
-    padding:10px
-}
+    padding: 10px
+  }
 
-.reviews-carousel .review .review-text h3 {
-    font-size:16px
-}
+  .reviews-carousel .review .review-text h3 {
+    font-size: 16px
+  }
 
-.reviews-carousel .review .review-text p {
-    font-size:13px
-}
+  .reviews-carousel .review .review-text p {
+    font-size: 13px
+  }
 
-.reviews-carousel .review .name {
+  .reviews-carousel .review .name {
     font-size: 16px;
-    padding:5px 10px 5px 0
-}
+    padding: 5px 10px 5px 0
+  }
 
   .contacts__inner {
     padding-left: 0;
@@ -548,7 +580,7 @@
 
 
 @media(max-width: 400px) {
-  .contacts__social-list{
+  .contacts__social-list {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
