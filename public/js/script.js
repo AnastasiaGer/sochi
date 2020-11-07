@@ -1,5 +1,5 @@
 $(function(){
-  $('.surf-slider').slick({
+  $('.excursions-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
@@ -38,14 +38,14 @@ $(function(){
   });
 
 
-  $('.reviews-carousel').slick({
+  $('.reviews-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
     autoplay: true,
-    speed: 4000,
+    speed: 1000,
     fade: true,
   });
 
@@ -61,7 +61,7 @@ $(function(){
     scrollingSpeed: 700,
     scrollOverflow: true,
     menu: '#header__nav',
-    anchors: ['top', 'products', 'cars', 'boats', 'benefits', 'reviews-block', 'contacts'],
+    anchors: ['top', 'excursions', 'cars', 'boats', 'benefits', 'reviews', 'contacts'],
   });
 
   $('.menu__btn').on('click', function(){

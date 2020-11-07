@@ -122,7 +122,6 @@
 
 
 .top {
-
   position: relative;
 
   &:after {
@@ -138,8 +137,6 @@
     background-size: cover;
     filter: none;
   }
-
-  z-index: 1;
 
   &__wrapper {
     display: flex;
@@ -189,11 +186,7 @@
   }
 }
 
-.slick-slider button {
-  display: none;
-}
-
-.surf-slider {
+.excursions-slider {
   padding-top: 20px;
 
   .slick-btn {
@@ -220,30 +213,30 @@
   }
 
   .slick-slide:nth-child(4n + 1) {
-    .surf-box {
+    .excursions-box {
       margin-top: 32px;
     }
   }
 
   .slick-slide:nth-child(4n + 3) {
-    .surf-box {
+    .excursions-box {
       margin-top: 89px;
     }
   }
 
   .slick-current {
-    .surf-box__inner-btn {
+    .excursions-box__inner-btn {
       display: block;
     }
 
-    .surf-box__inner {
+    .excursions-box__inner {
       background: rgba(#1C2121, .3);
     }
 
   }
 }
 
-.surf-box {
+.excursions-box {
   &__wrapper {
     background-position: center;
     background-repeat: no-repeat;
@@ -259,7 +252,7 @@
     &:hover {
       background: rgba(#1C2121, .3);
 
-      .surf-box__inner-btn {
+      .excursions-box__inner-btn {
         display: block;
         cursor: pointer;
       }
@@ -267,7 +260,7 @@
   }
 }
 
-.surf-box__inner-title {
+.excursions-box__inner-title {
   font-weight: 800;
   font-size: 32px;
   line-height: 32px;
@@ -275,7 +268,7 @@
   width: 140px;
 }
 
-.surf-box__inner-location {
+.excursions-box__inner-duration {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
@@ -295,40 +288,13 @@
   }
 }
 
-.surf-box__inner-btn {
+.excursions-box__inner-btn {
   bottom: 0;
   position: absolute;
   text-align: center;
   left: 0;
   right: 0;
   display: none;
-}
-
-.slider-btn {
-  padding: 16px 26px;
-  border: none;
-  background-color: #fff;
-  position: absolute;
-  bottom: -48px;
-  right: 0;
-  cursor: pointer;
-  z-index: 5;
-
-  svg {
-    stroke: #000;
-  }
-
-  &__left {
-    right: 60px;
-  }
-
-  &.slick-disabled {
-    background-color: #000;
-
-    svg {
-      stroke: #fff;
-    }
-  }
 }
 
 .cars-slider {
@@ -427,17 +393,22 @@
     justify-content: space-between;
     // height: 456px;
 
+    &-text {
+      padding: 10px 25px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 18px;
+      font-family: 'Yeseva One', cursive;
+      line-height: 22px;
+      width: 60%;
+      margin-bottom: 10px;
+    }
+
     &-img {
       width: 30%;
       height: 100%;
       aspect-ratio: attr(width) / attr(height);
     }
-  }
-
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
   }
 
   &__subtitle {
@@ -448,30 +419,22 @@
     margin-bottom: 0;
   }
 
-  &__text {
-    padding: 10px 25px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 18px;
-    font-family: 'Yeseva One', cursive;
-    line-height: 22px;
-    width: 60%;
-    margin-bottom: 10px;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 20px;
   }
 }
 
-.statistic-advantages {
-  padding-bottom: 20px;
-}
-
-.advantages-list {
+.benefits__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
-.advantages-list__item {
+.benefits__list-item {
   padding: 10px 25px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -479,7 +442,7 @@
 }
 
 
-.advantages-list__item-text {
+.benefits__list-item-text {
   font-weight: bold;
   font-size: 18px;
   font-family: 'Yeseva One', cursive;
@@ -488,15 +451,15 @@
 
 }
 
-.advantages-list__item-img {
+.benefits__list-item-img {
   fill: #ECB84C;
 }
 
-.advantages-list__item-text {
+.benefits__list-item-text {
   margin: 0;
 }
 
-.reviews-block {
+.reviews {
   position: relative;
 
   &__text {
@@ -508,7 +471,36 @@
   }
 }
 
-.review {
+.reviews__box-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 300;
+  font-style: italic
+}
+
+.reviews__box-text h3 {
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-style: normal
+}
+
+.reviews__box-text p {
+  text-align: justify
+}
+
+.reviews__box-name {
+  font-size: 20px;
+  color: #fff;
+  font-style: italic;
+  text-align: right;
+  padding: 10px 20px 5px 0
+}
+
+.reviews__box-wrapper {
   margin: 0 auto;
   padding: 20px;
   width: 100%;
@@ -517,7 +509,7 @@
   text-align: center
 }
 
-.image-cover {
+.reviews__box-image {
   display: inline-block !important;
   border-radius: 50%;
   width: 50%;
@@ -528,57 +520,6 @@
   overflow: hidden;
   box-shadow: 0 0 5px 0 #fff;
   margin-bottom: 10px;
-}
-
-.reviews-carousel .review .review-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 6px;
-  color: #fff;
-  font-weight: 300;
-  font-style: italic
-}
-
-.reviews-carousel .review .review-text h3 {
-  text-align: left;
-  font-weight: 400;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-style: normal
-}
-
-.reviews-carousel .review .review-text p {
-  text-align: justify
-}
-
-.reviews-carousel .review .name {
-  font-size: 20px;
-  color: #fff;
-  font-style: italic;
-  text-align: right;
-  padding: 10px 20px 5px 0
-}
-
-.review.category-1 .review-text {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.slick-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-
-.slick-prev {
-  left: -75px;
-}
-
-.slick-next {
-  right: -75px;
 }
 
 
@@ -600,114 +541,44 @@
 
   &__info-box {
     margin-bottom: 30px;
-  }
-
-  &__info-title {
-    font-size: 21px;
-    line-height: 24px;
-    @extend %ubuntu-bold;
-    margin: 0 0 13px;
-  }
-
-  &__info-phone,
-  &__info-email {
-    font-size: 15px;
-    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: normal
   }
 
   &__info-email:hover {
     text-decoration: underline;
   }
 
-  &__form {
-    width: 570px;
-    margin-right: 106px;
-  }
-
-  &__form-title {
-    font-size: 21px;
-    line-height: 24px;
-    @extend %ubuntu-bold;
-    margin: 0 0 13px;
-  }
-
-  &__form-text {
-    font-size: 15px;
-    line-height: 18px;
-    margin: 0 0 12px;
-  }
-
-  &__form-line {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-
-  &__form-input,
-  &__form-textarea {
-    border: none;
-    background: rgba(0, 0, 0, 0.5);
-    font-size: 13px;
-    line-height: 15px;
-    @extend %ubuntu-regular;
-    padding: 15px;
-    color: #fff;
-
-    &::placeholder {
-      color: rgba(#fff, .4);
-    }
-  }
-
-  &__form-input {
-    width: 49%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  &__form-textarea {
-    min-height: 144px;
-    width: 100%;
-    resize: none;
-    margin-bottom: 20px;
-  }
-
-  &__form-btn {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    @extend %ubuntu-bold;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-    padding: 9px 15px;
-    color: #fff;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all .3s;
-
-    &:hover {
-      background-color: #fff;
-      color: #1C1C1C;
-    }
-  }
-
   &__social-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__social-item {
-    margin: 14px 0;
+    display: inline-block;
+    margin: 0 25px;
   }
 
   &__social-link {
-    opacity: 0.5;
+    opacity: 0.8;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__social-link svg {
+    padding-top: 5px;
 
     &:hover {
       opacity: 1;
     }
   }
 }
+
 
 .footer {
   position: absolute;
@@ -829,16 +700,16 @@
   }
 
   &::after {
-    content: '';
-    position: absolute;
+    display: none;
+  }
+}
+
+.about__body-btnmoreimg{
+  position: absolute;
     width: 40px;
     height: 60px;
-    background-image: url('../images/icons/arrow-prev.svg');
     top: -11%;
     left: 28px;
-    transform: translateY(-50%);
-    transform: rotate(-90deg);
-  }
 }
 
 
