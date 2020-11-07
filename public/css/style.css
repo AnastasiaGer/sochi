@@ -10,7 +10,7 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700; }
 
-.title, .reviews-block__text {
+.title, .reviews__text {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400; }
 
@@ -761,6 +761,22 @@ body {
     .slider-btn.slick-disabled svg {
       stroke: #fff; }
 
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; }
+
+.slick-prev {
+  left: -75px; }
+
+.slick-next {
+  right: -75px; }
+
 .title {
   font-size: 44px;
   line-height: 53px;
@@ -1188,15 +1204,40 @@ body {
 .benefits__list-item-text {
   margin: 0; }
 
-.reviews-block {
+.reviews {
   position: relative; }
-  .reviews-block__text {
+  .reviews__text {
     font-size: 36px;
     line-height: 53px;
     padding-left: 25px;
     margin-bottom: 30px; }
 
-.review {
+.reviews__box-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 300;
+  font-style: italic; }
+
+.reviews__box-text h3 {
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-style: normal; }
+
+.reviews__box-text p {
+  text-align: justify; }
+
+.reviews__box-name {
+  font-size: 20px;
+  color: #fff;
+  font-style: italic;
+  text-align: right;
+  padding: 10px 20px 5px 0; }
+
+.reviews__box-wrapper {
   margin: 0 auto;
   padding: 20px;
   width: 100%;
@@ -1206,7 +1247,7 @@ body {
           flex: 0 0 auto;
   text-align: center; }
 
-.image-cover {
+.reviews__box-image {
   display: inline-block !important;
   border-radius: 50%;
   width: 50%;
@@ -1217,50 +1258,6 @@ body {
   -webkit-box-shadow: 0 0 5px 0 #fff;
           box-shadow: 0 0 5px 0 #fff;
   margin-bottom: 10px; }
-
-.reviews-carousel .review .review-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 6px;
-  color: #fff;
-  font-weight: 300;
-  font-style: italic; }
-
-.reviews-carousel .review .review-text h3 {
-  text-align: left;
-  font-weight: 400;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-style: normal; }
-
-.reviews-carousel .review .review-text p {
-  text-align: justify; }
-
-.reviews-carousel .review .name {
-  font-size: 20px;
-  color: #fff;
-  font-style: italic;
-  text-align: right;
-  padding: 10px 20px 5px 0; }
-
-.review.category-1 .review-text {
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.slick-btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 5;
-  cursor: pointer;
-  background-color: transparent;
-  border: none; }
-
-.slick-prev {
-  left: -75px; }
-
-.slick-next {
-  right: -75px; }
 
 .contacts__inner {
   display: -webkit-box;
@@ -1543,43 +1540,7 @@ body {
   .title {
     padding-top: 90px; }
   .benefits .title {
-    padding-top: 10px; }
-  .specification__box-2 {
-    margin-top: 115px; }
-  .specification__box-4 {
-    margin-top: 115px; }
-  .specification__item--center {
-    text-align: center;
-    margin-top: -55px; }
-    .specification__item--center img {
-      width: 80%; }
-  .specification .title {
-    padding-top: 49px; }
-  .questions .title {
-    padding-top: 40px;
-    margin-bottom: 20px; }
-  .questions__item-title {
-    line-height: 22px;
-    font-size: 18px;
-    padding: 16px 10px 16px 30px; }
-  .questions__item-text {
-    padding: 0 5px 40px 30px; }
-  .questions__item-title::after {
-    width: 60px;
-    height: 54px;
-    right: -60px; } }
-
-@media (max-width: 1160px) {
-  .specification__box-2::before {
-    width: 310px;
-    height: 93px;
-    right: -238px;
-    top: -65px; }
-  .specification__box-3::before {
-    width: 190px;
-    height: 78px;
-    left: -230px;
-    top: 44px; } }
+    padding-top: 10px; } }
 
 @media (max-width: 1100px) {
   .menu {
@@ -1697,22 +1658,7 @@ body {
     padding-top: 50px;
     font-size: 35px;
     line-height: 42px;
-    margin-bottom: 35px; }
-  .specification__box-1::before,
-  .specification__box-2::before,
-  .specification__box-3::before,
-  .specification__box-4::before {
-    display: none; }
-  .about__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+    margin-bottom: 35px; } }
 
 @media (max-width: 940px) {
   .products__inner {
@@ -1761,42 +1707,20 @@ body {
         -ms-flex-order: 1;
             order: 1; } }
 
-@media (max-width: 877px) {
-  .specification__box-2,
-  .specification__box-4 {
-    margin-top: 50px; }
-  .specification__inner {
-    padding-left: 0; } }
-
 @media (max-width: 787px) {
   .top__title {
     margin-bottom: 210px; }
-  .benefits__item:nth-child(2) {
-    margin-left: 0; }
-  .benefits__item:nth-child(3) {
-    margin-left: 0; }
-  .benefits__item:nth-child(4) {
-    margin-left: 0; }
   .benefits__items {
     padding-left: 0; }
   .benefits__info {
     width: 100%; }
-  .specification__inner {
-    display: block; }
-  .specification__box {
-    width: 100%; }
-  .specification__box-2,
-  .specification__box-4 {
-    margin-top: 25px; }
-  .specification__item--center {
-    margin-top: 0; }
-  .reviews-carousel .review .review-text {
+  .reviews__box-text {
     padding: 10px; }
-  .reviews-carousel .review .review-text h3 {
+  .reviews__box-text h3 {
     font-size: 16px; }
-  .reviews-carousel .review .review-text p {
+  .reviews__box-text p {
     font-size: 13px; }
-  .reviews-carousel .review .name {
+  .reviews__box-name {
     font-size: 16px;
     padding: 5px 10px 5px 0; }
   .contacts__inner {
@@ -1814,14 +1738,7 @@ body {
   .products__text p {
     margin-bottom: 10px; }
   .products__text {
-    margin-bottom: 100px; }
-  .products__slider {
-    max-width: 100%; }
-    .products__slider::before {
-      width: 100%;
-      height: 100%; }
-    .products__slider img {
-      width: 100%; } }
+    margin-bottom: 100px; } }
 
 @media (max-width: 540px) {
   .top__title {
@@ -1829,24 +1746,9 @@ body {
   .top__text {
     margin: 15px 0 30%; }
   .scroll__btn {
-    padding: 13px 0; }
-  .benefits__num {
-    display: none; }
-  .benefits__item {
-    display: block; }
-  .benefits__img {
-    padding: 20px 0;
-    text-align: right; }
-  .benefits__img::before {
-    top: 8px; } }
+    padding: 13px 0; } }
 
 @media (max-width: 414px) {
-  .questions__item-title::after {
-    right: 0; }
-  .questions__items {
-    padding-right: 0; }
-  .questions__item-title {
-    padding: 15px 75px 15px 15px; }
   .contacts__form-line {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
