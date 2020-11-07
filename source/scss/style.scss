@@ -393,7 +393,7 @@
     justify-content: space-between;
     // height: 456px;
 
-    &-text{
+    &-text {
       padding: 10px 25px;
       border-radius: 10px;
       background-color: rgba(0, 0, 0, 0.5);
@@ -541,114 +541,44 @@
 
   &__info-box {
     margin-bottom: 30px;
-  }
-
-  &__info-title {
-    font-size: 21px;
-    line-height: 24px;
-    @extend %ubuntu-bold;
-    margin: 0 0 13px;
-  }
-
-  &__info-phone,
-  &__info-email {
-    font-size: 15px;
-    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: normal
   }
 
   &__info-email:hover {
     text-decoration: underline;
   }
 
-  &__form {
-    width: 570px;
-    margin-right: 106px;
-  }
-
-  &__form-title {
-    font-size: 21px;
-    line-height: 24px;
-    @extend %ubuntu-bold;
-    margin: 0 0 13px;
-  }
-
-  &__form-text {
-    font-size: 15px;
-    line-height: 18px;
-    margin: 0 0 12px;
-  }
-
-  &__form-line {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-
-  &__form-input,
-  &__form-textarea {
-    border: none;
-    background: rgba(0, 0, 0, 0.5);
-    font-size: 13px;
-    line-height: 15px;
-    @extend %ubuntu-regular;
-    padding: 15px;
-    color: #fff;
-
-    &::placeholder {
-      color: rgba(#fff, .4);
-    }
-  }
-
-  &__form-input {
-    width: 49%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  &__form-textarea {
-    min-height: 144px;
-    width: 100%;
-    resize: none;
-    margin-bottom: 20px;
-  }
-
-  &__form-btn {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    @extend %ubuntu-bold;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-    padding: 9px 15px;
-    color: #fff;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all .3s;
-
-    &:hover {
-      background-color: #fff;
-      color: #1C1C1C;
-    }
-  }
-
   &__social-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__social-item {
-    margin: 14px 0;
+    display: inline-block;
+    margin: 0 25px;
   }
 
   &__social-link {
-    opacity: 0.5;
+    opacity: 0.8;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__social-link svg {
+    padding-top: 5px;
 
     &:hover {
       opacity: 1;
     }
   }
 }
+
 
 .footer {
   position: absolute;
