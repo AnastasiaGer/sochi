@@ -1413,10 +1413,8 @@ body {
 
 .about__body-btnmoreimg {
   position: absolute;
-  width: 40px;
-  height: 60px;
-  top: -11%;
-  left: 28px; }
+  top: 12px;
+  left: 33px; }
 
 .about__text-title {
   font-weight: normal;
