@@ -1409,17 +1409,14 @@ body {
   .about__body-btnmore a span::before {
     display: none; }
   .about__body-btnmore a span::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 60px;
-    background-image: url("../images/icons/arrow-prev.svg");
-    top: -11%;
-    left: 28px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
+    display: none; }
+
+.about__body-btnmoreimg {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  top: -11%;
+  left: 28px; }
 
 .about__text-title {
   font-weight: normal;
