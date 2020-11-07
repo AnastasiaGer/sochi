@@ -45,11 +45,9 @@ body {
   max-width: 1270px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 
 .page-section {
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,14 +64,16 @@ body {
     filter: opacity(80%);
   }
 
-  z-index: 1;
-
   &__wrapper {
     min-height: 100vh;
     padding: 0 0 50px;
     position: relative;
     z-index: 1;
   }
+}
+
+.slick-slider button {
+  display: none;
 }
 
 .title {

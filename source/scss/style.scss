@@ -122,7 +122,6 @@
 
 
 .top {
-
   position: relative;
 
   &:after {
@@ -138,8 +137,6 @@
     background-size: cover;
     filter: none;
   }
-
-  z-index: 1;
 
   &__wrapper {
     display: flex;
@@ -187,10 +184,6 @@
       opacity: 1;
     }
   }
-}
-
-.slick-slider button {
-  display: none;
 }
 
 .surf-slider {

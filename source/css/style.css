@@ -723,8 +723,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  z-index: 1; }
+  position: relative; }
   .page-section:before {
     content: "";
     position: absolute;
@@ -740,6 +739,9 @@ body {
     padding: 0 0 50px;
     position: relative;
     z-index: 1; }
+
+.slick-slider button {
+  display: none; }
 
 .title {
   font-size: 44px;
@@ -885,8 +887,7 @@ body {
   right: auto; }
 
 .top {
-  position: relative;
-  z-index: 1; }
+  position: relative; }
   .top:after {
     content: "";
     position: absolute;
@@ -940,9 +941,6 @@ body {
     padding-top: 5px; }
     .top__social-link svg:hover {
       opacity: 1; }
-
-.slick-slider button {
-  display: none; }
 
 .surf-slider {
   padding-top: 20px; }
