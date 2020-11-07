@@ -1,5 +1,5 @@
 $(function(){
-  $('.surf-slider').slick({
+  $('.excursions-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',

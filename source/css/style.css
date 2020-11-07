@@ -743,6 +743,24 @@ body {
 .slick-slider button {
   display: none; }
 
+.slider-btn {
+  padding: 16px 26px;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  bottom: -48px;
+  right: 0;
+  cursor: pointer;
+  z-index: 5; }
+  .slider-btn svg {
+    stroke: #000; }
+  .slider-btn__left {
+    right: 60px; }
+  .slider-btn.slick-disabled {
+    background-color: #000; }
+    .slider-btn.slick-disabled svg {
+      stroke: #fff; }
+
 .title {
   font-size: 44px;
   line-height: 53px;
@@ -942,9 +960,9 @@ body {
     .top__social-link svg:hover {
       opacity: 1; }
 
-.surf-slider {
+.excursions-slider {
   padding-top: 20px; }
-  .surf-slider .slick-btn {
+  .excursions-slider .slick-btn {
     position: absolute;
     top: 305px;
     -webkit-transform: translateY(-50%);
@@ -953,47 +971,47 @@ body {
     cursor: pointer;
     background-color: transparent;
     border: none; }
-  .surf-slider .slick-prev {
+  .excursions-slider .slick-prev {
     left: -75px; }
-  .surf-slider .slick-next {
+  .excursions-slider .slick-next {
     right: -75px; }
-  .surf-slider .slider-arrows {
+  .excursions-slider .slider-arrows {
     top: 50px;
     opacity: .25; }
-  .surf-slider .slick-slide:nth-child(4n + 1) .surf-box {
+  .excursions-slider .slick-slide:nth-child(4n + 1) .excursions-box {
     margin-top: 32px; }
-  .surf-slider .slick-slide:nth-child(4n + 3) .surf-box {
+  .excursions-slider .slick-slide:nth-child(4n + 3) .excursions-box {
     margin-top: 89px; }
-  .surf-slider .slick-current .surf-box__inner-btn {
+  .excursions-slider .slick-current .excursions-box__inner-btn {
     display: block; }
-  .surf-slider .slick-current .surf-box__inner {
+  .excursions-slider .slick-current .excursions-box__inner {
     background: rgba(28, 33, 33, 0.3); }
 
-.surf-box__wrapper {
+.excursions-box__wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-.surf-box__inner {
+.excursions-box__inner {
   min-height: 550px;
   background: rgba(28, 33, 33, 0.85);
   position: relative;
   -webkit-transition: all .5s;
   transition: all .5s; }
-  .surf-box__inner:hover {
+  .excursions-box__inner:hover {
     background: rgba(28, 33, 33, 0.3); }
-    .surf-box__inner:hover .surf-box__inner-btn {
+    .excursions-box__inner:hover .excursions-box__inner-btn {
       display: block;
       cursor: pointer; }
 
-.surf-box__inner-title {
+.excursions-box__inner-title {
   font-weight: 800;
   font-size: 32px;
   line-height: 32px;
   padding: 72px 0 0 40px;
   width: 140px; }
 
-.surf-box__inner-location {
+.excursions-box__inner-duration {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
@@ -1006,34 +1024,16 @@ body {
   height: 0;
   width: 0;
   white-space: nowrap; }
-  .surf-box__inner-location span {
+  .excursions-box__inner-duration span {
     font-weight: 100; }
 
-.surf-box__inner-btn {
+.excursions-box__inner-btn {
   bottom: 0;
   position: absolute;
   text-align: center;
   left: 0;
   right: 0;
   display: none; }
-
-.slider-btn {
-  padding: 16px 26px;
-  border: none;
-  background-color: #fff;
-  position: absolute;
-  bottom: -48px;
-  right: 0;
-  cursor: pointer;
-  z-index: 5; }
-  .slider-btn svg {
-    stroke: #000; }
-  .slider-btn__left {
-    right: 60px; }
-  .slider-btn.slick-disabled {
-    background-color: #000; }
-    .slider-btn.slick-disabled svg {
-      stroke: #fff; }
 
 .cars-slider {
   padding-top: 20px; }
@@ -1127,18 +1127,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .benefits__box-text {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-family: 'Yeseva One', cursive;
+    line-height: 22px;
+    width: 60%;
+    margin-bottom: 10px; }
   .benefits__box-img {
     width: 30%;
     height: 100%;
     aspect-ratio: attr(width)/attr(height); }
-
-.benefits__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 20px; }
 
 .benefits__subtitle {
   font-family: 'SFProDisplay-Regular', sans-serif;
@@ -1147,20 +1148,16 @@ body {
   padding-left: 25px;
   margin-bottom: 0; }
 
-.benefits__text {
-  padding: 10px 25px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 18px;
-  font-family: 'Yeseva One', cursive;
-  line-height: 22px;
-  width: 60%;
-  margin-bottom: 10px; }
-
-.statistic-advantages {
+.benefits__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
   padding-bottom: 20px; }
 
-.advantages-list {
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,23 +1169,23 @@ body {
           align-items: center;
   text-align: center; }
 
-.advantages-list__item {
+.benefits__list-item {
   padding: 10px 25px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   margin-right: 10px; }
 
-.advantages-list__item-text {
+.benefits__list-item-text {
   font-weight: bold;
   font-size: 18px;
   font-family: 'Yeseva One', cursive;
   line-height: 22px;
   margin-top: 12px; }
 
-.advantages-list__item-img {
+.benefits__list-item-img {
   fill: #ECB84C; }
 
-.advantages-list__item-text {
+.benefits__list-item-text {
   margin: 0; }
 
 .reviews-block {
@@ -1545,17 +1542,8 @@ body {
     margin: 15px 0 25px; }
   .title {
     padding-top: 90px; }
-  .products__slider-box {
-    padding-top: 0; }
-  .products__slider-text {
-    bottom: auto;
-    left: auto;
-    top: -105px;
-    right: 0; }
   .benefits .title {
     padding-top: 10px; }
-  .benefits__item {
-    margin-bottom: 80px; }
   .specification__box-2 {
     margin-top: 115px; }
   .specification__box-4 {
@@ -1580,16 +1568,6 @@ body {
     width: 60px;
     height: 54px;
     right: -60px; } }
-
-@media (max-width: 1280px) {
-  .benefits__item {
-    width: 45%; }
-  .benefits__item:first-child::before {
-    width: 40%; }
-  .benefits__item:nth-child(2)::before {
-    width: 80%; }
-  .benefits__item:nth-child(3)::before {
-    width: 35%; } }
 
 @media (max-width: 1160px) {
   .specification__box-2::before {
@@ -1711,29 +1689,8 @@ body {
     margin-right: 0; }
   .products__text {
     padding-right: 15px; }
-  .products__slider-box {
-    padding-right: 20px; }
-  .benefits__item:first-child::before {
-    display: none; }
-  .benefits__item:nth-child(2)::before {
-    display: none; }
-  .benefits__item:nth-child(3)::before {
-    display: none; }
   .benefits__items {
-    display: block; }
-  .benefits__item {
-    width: 100%;
-    margin-bottom: 40px; }
-  .benefits__item:nth-child(2) {
-    margin-left: 200px;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  .benefits__item:nth-child(4) {
-    margin-left: 200px;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  .benefits__info {
-    width: 35%; } }
+    display: block; } }
 
 @media (max-width: 1024px) {
   .title {
@@ -1741,10 +1698,6 @@ body {
     font-size: 35px;
     line-height: 42px;
     margin-bottom: 35px; }
-  .products__slider-text {
-    font-size: 20px;
-    line-height: 22px;
-    top: -85px; }
   .specification__box-1::before,
   .specification__box-2::before,
   .specification__box-3::before,
@@ -1770,14 +1723,12 @@ body {
     margin-bottom: 140px; }
   .products__slider {
     margin-left: auto; }
-  .products__slider-box {
-    padding-bottom: 80px; }
   .benefits__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .advantages-list {
+  .benefits__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1789,7 +1740,7 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: left; }
-  .advantages-list__item {
+  .benefits__list-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1798,7 +1749,7 @@ body {
             align-items: center;
     margin-bottom: 10px;
     width: 60%; }
-  .advantages-list__item-text {
+  .benefits__list-item-text {
     margin-left: 10px; }
   .contacts__inner {
     -ms-flex-wrap: wrap;
@@ -1870,9 +1821,7 @@ body {
       width: 100%;
       height: 100%; }
     .products__slider img {
-      width: 100%; }
-  .products__slider-box {
-    padding-bottom: 60px; } }
+      width: 100%; } }
 
 @media (max-width: 540px) {
   .top__title {

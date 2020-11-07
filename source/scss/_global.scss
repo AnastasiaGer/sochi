@@ -76,6 +76,33 @@ body {
   display: none;
 }
 
+.slider-btn {
+  padding: 16px 26px;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  bottom: -48px;
+  right: 0;
+  cursor: pointer;
+  z-index: 5;
+
+  svg {
+    stroke: #000;
+  }
+
+  &__left {
+    right: 60px;
+  }
+
+  &.slick-disabled {
+    background-color: #000;
+
+    svg {
+      stroke: #fff;
+    }
+  }
+}
+
 .title {
   @extend %sf-regular;
   font-size: 44px;

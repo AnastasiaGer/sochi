@@ -186,7 +186,7 @@
   }
 }
 
-.surf-slider {
+.excursions-slider {
   padding-top: 20px;
 
   .slick-btn {
@@ -213,30 +213,30 @@
   }
 
   .slick-slide:nth-child(4n + 1) {
-    .surf-box {
+    .excursions-box {
       margin-top: 32px;
     }
   }
 
   .slick-slide:nth-child(4n + 3) {
-    .surf-box {
+    .excursions-box {
       margin-top: 89px;
     }
   }
 
   .slick-current {
-    .surf-box__inner-btn {
+    .excursions-box__inner-btn {
       display: block;
     }
 
-    .surf-box__inner {
+    .excursions-box__inner {
       background: rgba(#1C2121, .3);
     }
 
   }
 }
 
-.surf-box {
+.excursions-box {
   &__wrapper {
     background-position: center;
     background-repeat: no-repeat;
@@ -252,7 +252,7 @@
     &:hover {
       background: rgba(#1C2121, .3);
 
-      .surf-box__inner-btn {
+      .excursions-box__inner-btn {
         display: block;
         cursor: pointer;
       }
@@ -260,7 +260,7 @@
   }
 }
 
-.surf-box__inner-title {
+.excursions-box__inner-title {
   font-weight: 800;
   font-size: 32px;
   line-height: 32px;
@@ -268,7 +268,7 @@
   width: 140px;
 }
 
-.surf-box__inner-location {
+.excursions-box__inner-duration {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
@@ -288,40 +288,13 @@
   }
 }
 
-.surf-box__inner-btn {
+.excursions-box__inner-btn {
   bottom: 0;
   position: absolute;
   text-align: center;
   left: 0;
   right: 0;
   display: none;
-}
-
-.slider-btn {
-  padding: 16px 26px;
-  border: none;
-  background-color: #fff;
-  position: absolute;
-  bottom: -48px;
-  right: 0;
-  cursor: pointer;
-  z-index: 5;
-
-  svg {
-    stroke: #000;
-  }
-
-  &__left {
-    right: 60px;
-  }
-
-  &.slick-disabled {
-    background-color: #000;
-
-    svg {
-      stroke: #fff;
-    }
-  }
 }
 
 .cars-slider {
@@ -420,17 +393,22 @@
     justify-content: space-between;
     // height: 456px;
 
+    &-text{
+      padding: 10px 25px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 18px;
+      font-family: 'Yeseva One', cursive;
+      line-height: 22px;
+      width: 60%;
+      margin-bottom: 10px;
+    }
+
     &-img {
       width: 30%;
       height: 100%;
       aspect-ratio: attr(width) / attr(height);
     }
-  }
-
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
   }
 
   &__subtitle {
@@ -441,30 +419,23 @@
     margin-bottom: 0;
   }
 
-  &__text {
-    padding: 10px 25px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 18px;
-    font-family: 'Yeseva One', cursive;
-    line-height: 22px;
-    width: 60%;
-    margin-bottom: 10px;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 20px;
   }
 }
 
-.statistic-advantages {
-  padding-bottom: 20px;
-}
 
-.advantages-list {
+.benefits__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
-.advantages-list__item {
+.benefits__list-item {
   padding: 10px 25px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -472,7 +443,7 @@
 }
 
 
-.advantages-list__item-text {
+.benefits__list-item-text {
   font-weight: bold;
   font-size: 18px;
   font-family: 'Yeseva One', cursive;
@@ -481,11 +452,11 @@
 
 }
 
-.advantages-list__item-img {
+.benefits__list-item-img {
   fill: #ECB84C;
 }
 
-.advantages-list__item-text {
+.benefits__list-item-text {
   margin: 0;
 }
 
