@@ -82,6 +82,15 @@ $(function () {
     autoplay: true,
     speed: 1000,
     fade: true,
+    responsive: [
+    {
+      breakpoint: 426,
+      settings: {
+        centerMode: false,
+        arrows: false,
+      }
+    }
+  ]
   });
 
   $('#fullpage').fullpage({

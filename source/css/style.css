@@ -1737,6 +1737,8 @@ body {
     margin-bottom: 10px; }
   .benefits__box-img {
     width: 100%; }
+  .benefits__list-item {
+    width: 100%; }
   .reviews__text {
     font-size: 26px;
     line-height: 30px;
