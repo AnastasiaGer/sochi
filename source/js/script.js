@@ -3,6 +3,7 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
+    dots: false,
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
     responsive: [{
@@ -11,6 +12,7 @@ $(function () {
           slidesToShow: 2,
           centerMode: true,
           arrows: true,
+          dots: false,
         }
       },
       {
@@ -19,6 +21,7 @@ $(function () {
           slidesToShow: 1,
           centerMode: true,
           arrows: true,
+          dots: false,
         }
       },
       {
@@ -27,6 +30,7 @@ $(function () {
           slidesToShow: 1,
           centerMode: false,
           arrows: false,
+          dots: true,
         }
       }
     ]

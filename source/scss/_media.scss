@@ -319,6 +319,10 @@
   //   padding-top: 80px;
   // }
 
+  .scroll__btn {
+    display: none;
+}
+
   .btn span {
     padding: 17px 51px 15px 15px;
     margin-left: 0;
@@ -359,6 +363,20 @@
     font-size: 15px;
     line-height: 20px;
     bottom: 80px;
+  }
+
+  .excursions-slider {
+    .slick-slide:nth-child(4n + 1) {
+      .excursions-box {
+        margin-top: 0;
+      }
+    }
+
+    .slick-slide:nth-child(4n + 3) {
+      .excursions-box {
+        margin-top: 0;
+      }
+    }
   }
 
 
