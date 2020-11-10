@@ -5,8 +5,8 @@
   }
 
   .header {
-    background: rgba(0, 0, 0, .5);
-    padding: 25px 0;
+    background: rgba(0, 0, 0, .3);
+    padding: 15px 0;
     top: 0;
   }
 
@@ -30,7 +30,7 @@
 
   .benefits {
     .title {
-      padding-top: 10px;
+      padding-top: 90px;
     }
   }
 }
@@ -163,8 +163,12 @@
     margin-right: 0;
   }
 
-  .products__text {
-    padding-right: 15px;
+  .cars-slider .slick-next {
+    right: 0px;
+  }
+
+  .cars-slider .slick-prev {
+    left: 10px;
   }
 
 
@@ -178,10 +182,36 @@
 
 @media (max-width: 1024px) {
   .title {
-    padding-top: 50px;
+    padding-top: 90px;
     font-size: 35px;
     line-height: 42px;
     margin-bottom: 35px;
+  }
+
+  .cars-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  .benefits__box-text {
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+  }
+
+  .benefits__box-img {
+    width: 50%;
+    align-items: baseline;
+  }
+
+  .benefits__subtitle {
+    font-size: 26px;
+  }
+
+  .benefits__list-item {
+    width: 100%;
   }
 }
 
@@ -190,12 +220,6 @@
 @media (max-width: 940px) {
   .products__inner {
     display: block;
-  }
-
-  .products__text {
-    padding-right: 0;
-    max-width: 100%;
-    margin-bottom: 140px;
   }
 
   .products__slider {
@@ -266,9 +290,10 @@
     padding: 5px 10px 5px 0
   }
 
-  .contacts__inner {
-    padding-left: 0;
+  .contacts__social-item {
+    margin: 0 15px;
   }
+
 }
 
 // ------------------------------------------------------
@@ -280,26 +305,37 @@
 
   .title {
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 90px;
     font-size: 26px;
     line-height: 28px;
     margin-bottom: 15px;
-  }
-
-  .products__text p {
-    margin-bottom: 10px;
-  }
-
-  .products__text {
-    margin-bottom: 100px;
   }
 }
 
 // ------------------------------------------------------
 
 @media (max-width: 540px) {
+  // .container{
+  //   padding-top: 80px;
+  // }
+
+  .btn span {
+    padding: 17px 51px 15px 15px;
+    margin-left: 0;
+  }
+
+  .page-section__wrapper {
+    min-height: 75vh;
+  }
+
   .top__title {
-    display: none;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 0;
+  }
+
+  .top__inner {
+    margin-bottom: 0;
   }
 
   .top__text {
@@ -309,15 +345,76 @@
   .scroll__btn {
     padding: 13px 0;
   }
+
+  // .slick-slider button {
+  //   display: none !important;
+  // }
+
+  .excursions-box__inner {
+    min-height: 450px;
+  }
+
+  .excursions-box__inner-duration {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    bottom: 80px;
+  }
+
+
+
+  .cars-box {
+    flex-direction: row;
+
+  }
+
+  .cars__images {
+    width: 325px;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    // position: relative;
+  }
+
+
+
+  .cars__gallery {
+    display: none;
+  }
+
+  .cars__text {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .benefits__box-img {
+    width: 100%;
+  }
+
+  .reviews__text {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__inner {
+    width: 100%;
+  }
 }
 
 // ------------------------------------------------------
 
 
 @media(max-width: 400px) {
+  .top__social-item {
+    margin: 0 10px;
+  }
+
+
   .contacts__social-list {
     flex-direction: row;
-    width: 100%;
     justify-content: space-around;
   }
 }
