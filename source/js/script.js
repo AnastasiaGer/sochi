@@ -86,7 +86,7 @@ $(function () {
     {
       breakpoint: 426,
       settings: {
-        centerMode: false,
+        centerMode: true,
         arrows: false,
       }
     }
