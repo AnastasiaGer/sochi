@@ -346,9 +346,9 @@
     padding: 13px 0;
   }
 
-  .slick-slider button {
-    display: none !important;
-  }
+  // .slick-slider button {
+  //   display: none !important;
+  // }
 
   .excursions-box__inner {
     min-height: 450px;
@@ -361,8 +361,11 @@
     bottom: 80px;
   }
 
+
+
   .cars-box {
     flex-direction: row;
+
   }
 
   .cars__images {
@@ -370,7 +373,10 @@
     height: 450px;
     margin-left: 10px;
     margin-right: 10px;
-}
+    // position: relative;
+  }
+
+
 
   .cars__gallery {
     display: none;
