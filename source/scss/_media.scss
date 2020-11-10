@@ -163,8 +163,12 @@
     margin-right: 0;
   }
 
-  .products__text {
-    padding-right: 15px;
+  .cars-slider .slick-next {
+    right: 0px;
+  }
+
+  .cars-slider .slick-prev {
+    left: 10px;
   }
 
 
@@ -183,6 +187,13 @@
     line-height: 42px;
     margin-bottom: 35px;
   }
+
+  .cars-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 
   .benefits__box-text {
     font-size: 14px;
@@ -209,12 +220,6 @@
 @media (max-width: 940px) {
   .products__inner {
     display: block;
-  }
-
-  .products__text {
-    padding-right: 0;
-    max-width: 100%;
-    margin-bottom: 140px;
   }
 
   .products__slider {
@@ -305,14 +310,6 @@
     line-height: 28px;
     margin-bottom: 15px;
   }
-
-  .products__text p {
-    margin-bottom: 10px;
-  }
-
-  .products__text {
-    margin-bottom: 100px;
-  }
 }
 
 // ------------------------------------------------------
@@ -325,7 +322,7 @@
   .btn span {
     padding: 17px 51px 15px 15px;
     margin-left: 0;
-}
+  }
 
   .page-section__wrapper {
     min-height: 75vh;
@@ -351,7 +348,7 @@
 
   .slick-slider button {
     display: none !important;
-}
+  }
 
   .excursions-box__inner {
     min-height: 450px;
@@ -362,12 +359,33 @@
     font-size: 15px;
     line-height: 20px;
     bottom: 80px;
+  }
+
+  .cars-box {
+    flex-direction: row;
+  }
+
+  .cars__images {
+    width: 325px;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
+  .cars__gallery {
+    display: none;
+  }
 
-.benefits__box-img {
-  width: 100%;
-}
+  .cars__text {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .benefits__box-img {
+    width: 100%;
+  }
 
   .reviews__text {
     font-size: 26px;

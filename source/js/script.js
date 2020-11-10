@@ -33,8 +33,35 @@ $(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    dots: false,
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/icons/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/icons/arrow-next.svg" alt=""></button>',
+    responsive: [
+      {
+          breakpoint: 1100,
+          settings: {
+              slidesToShow: 1,
+              centerMode: true,
+              dots: false,
+          }
+      },
+      {
+          breakpoint: 720,
+          settings: {
+              slidesToShow: 1,
+              centerMode: true,
+              dots: false,
+          }
+      },
+      {
+          breakpoint: 426,
+          settings: {
+              slidesToShow: 1,
+              dots: true,
+              centerMode: false,
+          }
+      }
+    ]
   });
 
 

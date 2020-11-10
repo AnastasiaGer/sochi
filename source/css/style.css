@@ -1570,8 +1570,10 @@ body {
     display: none; }
   .header__btn {
     margin-right: 0; }
-  .products__text {
-    padding-right: 15px; }
+  .cars-slider .slick-next {
+    right: 0px; }
+  .cars-slider .slick-prev {
+    left: 10px; }
   .benefits__items {
     display: block; } }
 
@@ -1581,6 +1583,14 @@ body {
     font-size: 35px;
     line-height: 42px;
     margin-bottom: 35px; }
+  .cars-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .benefits__box-text {
     font-size: 14px;
     line-height: 18px;
@@ -1598,10 +1608,6 @@ body {
 @media (max-width: 940px) {
   .products__inner {
     display: block; }
-  .products__text {
-    padding-right: 0;
-    max-width: 100%;
-    margin-bottom: 140px; }
   .products__slider {
     margin-left: auto; }
   .benefits__box {
@@ -1663,11 +1669,7 @@ body {
     padding-top: 90px;
     font-size: 26px;
     line-height: 28px;
-    margin-bottom: 15px; }
-  .products__text p {
-    margin-bottom: 10px; }
-  .products__text {
-    margin-bottom: 100px; } }
+    margin-bottom: 15px; } }
 
 @media (max-width: 540px) {
   .btn span {
@@ -1694,6 +1696,23 @@ body {
     font-size: 15px;
     line-height: 20px;
     bottom: 80px; }
+  .cars-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .cars__images {
+    width: 325px;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .cars__gallery {
+    display: none; }
+  .cars__text {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px; }
   .benefits__box-img {
     width: 100%; }
   .reviews__text {
