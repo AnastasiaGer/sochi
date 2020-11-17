@@ -378,9 +378,7 @@ template {
   float: right; }
 
 .slick-slide img {
-  display: block;
-  width: 100%;
-  height: auto; }
+  display: block; }
 
 .slick-slide.slick-loading img {
   display: none; }
@@ -1362,8 +1360,8 @@ body {
 
 .about__slider-img {
   display: block;
-  width: 100%;
-  height: auto; }
+  width: 100% !important;
+  height: auto !important; }
 
 .about__slider__btn {
   position: absolute;
