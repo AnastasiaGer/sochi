@@ -323,18 +323,21 @@
   display: flex !important;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.cars__images-box{
+  width: 45%;
 }
 
 .cars__images {
-  margin-right: 50px;
-  margin-left: 50px;
-  width: 500px;
-  height: 700px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .cars__content {
-  width: 500px;
-  margin-right: 90px;
+  width: 45%;
 }
 
 .cars__text {
@@ -405,9 +408,9 @@
     }
 
     &-img {
-      width: 30%;
-      height: 100%;
-      aspect-ratio: attr(width) / attr(height);
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
 

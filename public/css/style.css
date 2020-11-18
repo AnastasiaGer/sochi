@@ -1095,17 +1095,19 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  padding: 0 15px; }
+
+.cars__images-box {
+  width: 45%; }
 
 .cars__images {
-  margin-right: 50px;
-  margin-left: 50px;
-  width: 500px;
-  height: 700px; }
+  display: block;
+  width: 100%;
+  height: auto; }
 
 .cars__content {
-  width: 500px;
-  margin-right: 90px; }
+  width: 45%; }
 
 .cars__text {
   font-weight: 800;
@@ -1173,9 +1175,9 @@ body {
     width: 60%;
     margin-bottom: 10px; }
   .benefits__box-img {
-    width: 30%;
-    height: 100%;
-    aspect-ratio: attr(width)/attr(height); }
+    display: block;
+    width: 100%;
+    height: auto; }
 
 .benefits__subtitle {
   font-family: 'SFProDisplay-Regular', sans-serif;
@@ -1605,10 +1607,7 @@ body {
     line-height: 18px;
     width: 100%; }
   .benefits__box-img {
-    width: 50%;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline; }
+    width: 50%; }
   .benefits__subtitle {
     font-size: 26px; }
   .benefits__list-item {
@@ -1623,7 +1622,12 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .benefits__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1726,8 +1730,6 @@ body {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 10px; }
-  .benefits__box-img {
-    width: 100%; }
   .benefits__list-item {
     width: 100%; }
   .reviews__text {

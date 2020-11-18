@@ -203,7 +203,6 @@
 
   .benefits__box-img {
     width: 50%;
-    align-items: baseline;
   }
 
   .benefits__subtitle {
@@ -230,6 +229,8 @@
   .benefits {
     &__box {
       flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -407,9 +408,9 @@
     margin-bottom: 10px;
   }
 
-  .benefits__box-img {
-    width: 100%;
-  }
+  // .benefits__box-img {
+  //   width: 100%;
+  // }
 
   .benefits__list-item {
     width: 100%;
