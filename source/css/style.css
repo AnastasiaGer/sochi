@@ -1063,11 +1063,6 @@ body {
 .cars__images-box {
   width: 40%; }
 
-.cars__images {
-  display: block;
-  width: 100%;
-  height: auto; }
-
 .cars__content {
   width: 45%; }
 
