@@ -153,7 +153,6 @@
   &__title {
     font-size: 96px;
     line-height: 115px;
-    @extend %sf-semibold;
     margin-bottom: 100px;
   }
 
@@ -263,7 +262,7 @@
   font-weight: 800;
   font-size: 32px;
   line-height: 32px;
-  padding: 40px 0;
+  padding: 40px 0 0 40px;
   width: 140px;
 }
 
@@ -469,7 +468,6 @@
   position: relative;
 
   &__text {
-    @extend %sf-regular;
     font-size: 28px;
     line-height: 10px;
     padding-left: 25px;
