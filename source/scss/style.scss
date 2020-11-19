@@ -235,6 +235,9 @@
 }
 
 .excursions-box {
+  display: inline-block;
+  width: 30%;
+
   &__wrapper {
     background-position: center;
     background-repeat: no-repeat;
@@ -263,7 +266,6 @@
   font-size: 32px;
   line-height: 32px;
   padding: 40px 0 0 40px;
-  width: 140px;
 }
 
 .excursions-box__inner-duration {
@@ -298,7 +300,7 @@
 
 // cars + boats
 
-.cars__inner{
+.cars__inner {
   min-height: 500px;
 }
 
@@ -333,7 +335,7 @@
   min-height: 500px;
 }
 
-.cars__images-box{
+.cars__images-box {
   width: 40%;
 }
 
@@ -350,7 +352,7 @@
 .cars__text {
   font-weight: 800;
   font-size: 26px;
-  line-height: 16px;
+  line-height: 24px;
 }
 
 .cars__gallery {
@@ -407,7 +409,7 @@
       width: 60%;
     }
 
-    &-photo{
+    &-photo {
       width: 25%;
     }
 
@@ -422,7 +424,6 @@
     font-weight: 400;
     font-size: 28px;
     padding-left: 25px;
-    margin-bottom: 0;
   }
 
   &__items {
@@ -469,7 +470,7 @@
 
   &__text {
     font-size: 28px;
-    line-height: 10px;
+    line-height: 26px;
     padding-left: 25px;
     margin-bottom: 14px;
   }
@@ -597,33 +598,42 @@
     color: rgba(#fff, .64);
   }
 }
-.about__container{
-  height: 823px;
-  display: flex;
-  justify-content: space-between;
+
+
+.about__wrapper {
+  min-height: 100vh;
+  padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
-// .about__inner {
-//   position: relative;
-// }
+.about__title{
 
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 100px;
+  margin-bottom: 30px;
+}
 
 .about__slider {
-  width: 45%;
+  width: 40%;
   position: relative;
 }
+
+// .about__slider-img{
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
 
 .about__content {
   width: 55%;
   margin-left: 20px;
-}
 
-.about__slider-img{
-  display: block;
-  width: 100% !important;
-  height: auto !important;
 }
-
 
 .about__slider__btn {
   position: absolute;
@@ -639,76 +649,41 @@
   cursor: pointer;
 }
 
-.about__slider__btnprev {
-  left: -15px;
+.about__slider .slick-prev {
+  left: -90px;
 }
 
-.about__slider__btnnext {
-  right: -15px;
+.about__slider .slick-next {
+  right: -50px;
 }
 
 .about__body {
-  // height: 725px;
-  padding: 20px;
+  min-height: 500px;
+  padding: 0 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
+
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+ font-size: 14px;
+    line-height: 18px;
 }
 
-.about__text,
-.about__text-title,
-.about__list-item{
-  margin-bottom: 10px;
-}
-
-.about__text-title {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+.about__slider-img {
+  margin: 0 !important;
 }
 
 .about__text {
   padding-right: 10px;
-}
-
-
-.about__body-btn {
-  bottom: 10px;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-
-}
-
-.about__body-btn a {
-  position: relative;
-}
-
-.about__body-btn a span {
-  padding: 17px 30px 15px 45px;
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 20px;
-    background-image: url('../images/icons/arrows-right.svg');
-    top: 25%;
-    left: 30px;
-    transform: translateY(-50%);
-    transform: rotate(180deg);
-  }
+  margin-bottom: 0;
 }
 
 .about__body-btnmore {
-  bottom: 16px;
+  bottom: 88px;
   position: absolute;
   text-align: center;
-  left: -520px;
+  left: 236px;
 }
 
 .about__body-btnmore a span {
@@ -723,31 +698,31 @@
   }
 }
 
-.about__body-btnmoreimg{
+.about__body-btnmoreimg {
   position: absolute;
   top: 12px;
   left: 33px;
 }
 
-.slick-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-  cursor: pointer;
-  background-color: transparent;
-}
+// .slick-btn {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 5;
+//   cursor: pointer;
+//   background-color: transparent;
+// }
 
-.slick-prev {
-  left: 0;
-}
+// .slick-prev {
+//   left: 0;
+// }
 
-.slick-next {
-  right: 0;
-}
+// .slick-next {
+//   right: 0;
+// }
 
 .page__social-list {
-  padding-left: 130px;
+  padding-left: 150px;
 }
 
 @import "media";

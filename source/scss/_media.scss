@@ -1,43 +1,11 @@
-@media (max-width: 1366px) {
-  body {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .header {
-    background: rgba(0, 0, 0, .3);
-    padding: 15px 0;
-    top: 0;
-  }
-
-  .top__title {
-    font-size: 75px;
-    line-height: 90px;
-    margin-bottom: 65px;
-  }
-
-  .top__inner img {
-    width: 80%;
-  }
-
-  .top__text {
-    margin: 15px 0 25px;
-  }
+@media (max-width: 1230px) {
 
   .title {
     padding-top: 90px;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 20px;
   }
-
-  .benefits {
-    .title {
-      padding-top: 90px;
-    }
-  }
-}
-
-// ------------------------------------------------------
-
-@media (max-width: 1100px) {
 
   .menu {
     order: 1;
@@ -163,29 +131,55 @@
     margin-right: 0;
   }
 
-  .cars-slider .slick-next {
-    right: 0px;
+  .cars__images-box {
+    width: 30%;
   }
 
-  .cars-slider .slick-prev {
-    left: 10px;
+  .cars__content {
+    width: 40%;
+  }
+
+  .about__content {
+    width: 45%;
+  }
+
+  .about__slider {
+    width: 40%;
+  }
+
+  .about__body {
+    font-size: 14px;
+    line-height: 22px;
   }
 
 
-  .benefits__items {
-    display: block;
-  }
+
 }
-
 
 // ------------------------------------------------------
 
-@media (max-width: 1024px) {
-  .title {
-    padding-top: 90px;
-    font-size: 35px;
-    line-height: 42px;
-    margin-bottom: 35px;
+@media (max-width: 1065px) {
+  .page__social-list {
+    margin-top: -65px;
+  }
+}
+
+// ------------------------------------------------------
+
+@media (max-width: 990px) {
+
+  .top__title {
+    font-size: 72px;
+    line-height: 74px;
+    margin-bottom: 100px;
+  }
+
+  .products__inner {
+    display: block;
+  }
+
+  .products__slider {
+    margin-left: auto;
   }
 
   .cars-box {
@@ -193,36 +187,12 @@
     align-items: center;
   }
 
-
-
-  .benefits__box-text {
-    font-size: 14px;
-    line-height: 18px;
-    width: 100%;
+  .cars__images-box {
+    width: 60%;
   }
 
-  .benefits__box-img {
-    width: 50%;
-  }
-
-  .benefits__subtitle {
-    font-size: 26px;
-  }
-
-  .benefits__list-item {
-    width: 100%;
-  }
-}
-
-// ------------------------------------------------------
-
-@media (max-width: 940px) {
-  .products__inner {
-    display: block;
-  }
-
-  .products__slider {
-    margin-left: auto;
+  .cars__content {
+    width: 80%;
   }
 
 
@@ -234,10 +204,29 @@
     }
   }
 
+  .benefits__box-text {
+    width: 100%;
+  }
+
+  .benefits__box-photo {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .benefits__subtitle {
+    display: block;
+    text-align: center;
+  }
+
+  .benefits__items {
+    display: block;
+    margin: 0 auto;
+  }
+
   .benefits__list {
     flex-direction: column;
     justify-content: start;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
   }
 
@@ -256,85 +245,74 @@
   .contacts__inner {
     flex-wrap: wrap;
   }
+
+  .contacts {
+    &__inner {
+      width: 100%;
+    }
+  }
+
+  .contacts__social-list {
+    justify-content: flex-start;
+  }
+
+  .about__header-info{
+    display: none;
+  }
+
+  .about__slider {
+    width: 45%;
+  }
+
 }
+
+
 
 // ------------------------------------------------------
 
-@media (max-width: 787px) {
+@media (max-width: 770px) {
   .top__title {
-    margin-bottom: 210px;
+    font-size: 52px;
+    line-height: 42px;
+    margin-bottom: 100px;
   }
 
-  .benefits__items {
+
+  .products__inner {
     padding-left: 0;
   }
 
-  .benefits__info {
-    width: 100%;
-  }
-
-
-  .reviews__box-text {
-    padding: 10px
-  }
-
-  .reviews__box-text h3 {
-    font-size: 16px
-  }
-
-  .reviews__box-text p {
-    font-size: 13px
-  }
-
-  .reviews__box-name {
-    font-size: 16px;
-    padding: 5px 10px 5px 0
+  .reviews-slider .slick-btn {
+    top: 20%;
   }
 
   .contacts__social-item {
     margin: 0 15px;
   }
-
 }
 
 // ------------------------------------------------------
 
-@media (max-width: 680px) {
-  .products__inner {
-    padding-left: 0;
-  }
-
-  .title {
-    padding-left: 0;
-    padding-top: 0;
-    font-size: 26px;
-    line-height: 28px;
-    margin-bottom: 0;
-  }
-}
-
-// ------------------------------------------------------
-
-@media (max-width: 540px) {
+@media (max-width: 575px) {
   // .container{
   //   padding-top: 80px;
   // }
 
+  // .page-section__wrapper {
+  //   min-height: 75vh; }
+  //
+
   .scroll__btn {
     display: none;
-}
+  }
 
   .btn span {
     padding: 17px 51px 15px 15px;
     margin-left: 0;
   }
 
-  .page-section__wrapper {
-    min-height: 75vh;
-  }
-
   .top__title {
-    font-size: 40px;
+    font-size: 46px;
     line-height: 50px;
     margin-bottom: 0;
   }
@@ -347,6 +325,10 @@
     margin: 15px 0 30%;
   }
 
+  .top__social-item {
+    margin: 0 10px;
+  }
+
   .scroll__btn {
     padding: 13px 0;
   }
@@ -355,16 +337,16 @@
   //   display: none !important;
   // }
 
-  .excursions-box__inner {
-    min-height: 450px;
-  }
+  // .excursions-box__inner {
+  //   min-height: 450px;
+  // }
 
-  .excursions-box__inner-duration {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    bottom: 80px;
-  }
+  // .excursions-box__inner-duration {
+  //   font-weight: 400;
+  //   font-size: 15px;
+  //   line-height: 20px;
+  //   bottom: 80px;
+  // }
 
   .excursions-slider {
     .slick-slide:nth-child(4n + 1) {
@@ -380,22 +362,10 @@
     }
   }
 
-
-
   .cars-box {
     flex-direction: row;
 
   }
-
-  // .cars__images {
-  //   width: 325px;
-  //   height: 450px;
-  //   margin-left: 10px;
-  //   margin-right: 10px;
-  //   // position: relative;
-  // }
-
-
 
   .cars__gallery {
     display: none;
@@ -408,13 +378,9 @@
     margin-bottom: 10px;
   }
 
-  // .benefits__box-img {
-  //   width: 100%;
-  // }
-
   .benefits__list-item {
     width: 100%;
-}
+  }
 
   .reviews__text {
     font-size: 22px;
@@ -425,16 +391,6 @@
   .contacts__inner {
     width: 100%;
   }
-}
-
-// ------------------------------------------------------
-
-
-@media(max-width: 400px) {
-  .top__social-item {
-    margin: 0 10px;
-  }
-
 
   .contacts__social-list {
     flex-direction: row;
