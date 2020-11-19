@@ -988,7 +988,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover; }
   .excursions-box__inner {
-    min-height: 500px;
+    min-height: 450px;
     background: rgba(28, 33, 33, 0.85);
     position: relative;
     -webkit-transition: all .5s;
