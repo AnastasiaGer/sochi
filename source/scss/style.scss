@@ -1,6 +1,5 @@
 @import "vars";
 @import "libs";
-@import "fonts";
 @import "global";
 
 .header {
@@ -244,7 +243,7 @@
   }
 
   &__inner {
-    min-height: 550px;
+    min-height: 500px;
     background: rgba(#1C2121, .85);
     position: relative;
     transition: all .5s;
@@ -264,7 +263,7 @@
   font-weight: 800;
   font-size: 32px;
   line-height: 32px;
-  padding: 72px 0 0 40px;
+  padding: 40px 0;
   width: 140px;
 }
 
@@ -297,8 +296,16 @@
   display: none;
 }
 
+
+// cars + boats
+
+.cars__inner{
+  min-height: 500px;
+}
+
 .cars-slider {
   padding-top: 20px;
+  min-height: 500px;
 
   .slick-btn {
     position: absolute;
@@ -321,13 +328,14 @@
 
 .cars-box {
   display: flex !important;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 15px;
+  min-height: 500px;
 }
 
 .cars__images-box{
-  width: 45%;
+  width: 40%;
 }
 
 .cars__images {
@@ -342,26 +350,21 @@
 
 .cars__text {
   font-weight: 800;
-  font-size: 32px;
-  line-height: 32px;
-  margin-bottom: 40px;
+  font-size: 26px;
+  line-height: 16px;
 }
 
-
 .cars__gallery {
-  max-width: 1000px;
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .cars__gallery-item {
-  margin-top: 50px;
   margin-right: 10px;
+  margin-bottom: 20px;
   position: relative;
 }
-
 
 .cars__gallery-img {
   opacity: 1;
@@ -389,22 +392,24 @@
   opacity: 1;
 }
 
-
+// benefits
 .benefits {
   &__box {
     display: flex;
-    justify-content: space-between;
-    // height: 456px;
+    justify-content: space-around;
+    padding-top: 20px;
 
     &-text {
       padding: 10px 25px;
       border-radius: 10px;
       background-color: rgba(0, 0, 0, 0.5);
-      font-size: 18px;
-      font-family: 'Yeseva One', cursive;
-      line-height: 22px;
+      font-size: 16px;
+      line-height: 20px;
       width: 60%;
-      margin-bottom: 10px;
+    }
+
+    &-photo{
+      width: 25%;
     }
 
     &-img {
@@ -415,9 +420,8 @@
   }
 
   &__subtitle {
-    font-family: 'SFProDisplay-Regular', sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     padding-left: 25px;
     margin-bottom: 0;
   }
@@ -448,7 +452,6 @@
 .benefits__list-item-text {
   font-weight: bold;
   font-size: 18px;
-  font-family: 'Yeseva One', cursive;
   line-height: 22px;
   margin-top: 12px;
 
@@ -467,10 +470,10 @@
 
   &__text {
     @extend %sf-regular;
-    font-size: 36px;
-    line-height: 53px;
+    font-size: 28px;
+    line-height: 10px;
     padding-left: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
   }
 }
 

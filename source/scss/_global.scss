@@ -36,7 +36,7 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #fff;
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Ubuntu',sans-serif;
   font-size: 17px;
   line-height: 26px;
 }
@@ -119,8 +119,8 @@ body {
 
 .title {
   @extend %sf-regular;
-  font-size: 44px;
-  line-height: 53px;
+  font-size: 36px;
+  line-height: 42px;
   padding-left: 25px;
   padding-top: 100px;
 }

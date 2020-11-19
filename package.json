@@ -51,6 +51,6 @@
     "node": "10"
   },
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7"
+    "@fancyapps/fancybox": "3.5.7"
   }
 }
