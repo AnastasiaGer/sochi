@@ -1306,29 +1306,16 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0 100px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  position: relative;
+  min-height: 500px; }
 
 .about__slider {
-  width: 40%;
-  position: relative; }
+  width: 40%; }
 
 .about__content {
   width: 55%;
   margin-left: 20px; }
-
-.about__slider__btn {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-  z-index: 5;
-  cursor: pointer; }
 
 .about__slider .slick-prev {
   left: -90px; }
@@ -1361,11 +1348,35 @@ body {
   padding-right: 10px;
   margin-bottom: 0; }
 
-.about__body-btnmore {
-  bottom: 88px;
+.about__body-btnprev {
+  bottom: 10px;
   position: absolute;
   text-align: center;
-  left: 236px; }
+  left: 0;
+  right: 0; }
+
+.about__body-btnprev a {
+  position: relative; }
+
+.about__body-btnprev a span {
+  padding: 17px 30px 15px 45px; }
+  .about__body-btnprev a span::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    background-image: url("../images/icons/arrows-right.svg");
+    top: 25%;
+    left: 30px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.about__body-btnmore {
+  bottom: 0;
+  left: 93px;
+  position: absolute; }
 
 .about__body-btnmore a span {
   padding: 17px 15px 15px 65px; }
