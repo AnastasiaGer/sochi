@@ -259,7 +259,7 @@
     justify-content: flex-start;
   }
 
-  .about__header-info{
+  .about__header-info {
     display: none;
   }
 
@@ -283,6 +283,7 @@
   .cars__images-box {
     width: 80%;
   }
+
   .cars__content {
     width: 80%;
   }
@@ -306,6 +307,7 @@
   .cars__images-box {
     width: 100%;
   }
+
   .cars__gallery {
     display: none;
   }
@@ -316,13 +318,18 @@
 // ------------------------------------------------------
 
 @media (max-width: 575px) {
-  // .container{
-  //   padding-top: 80px;
-  // }
+  .page-section__wrapper {
+    min-height: 75vh;
+  }
 
-  // .page-section__wrapper {
-  //   min-height: 75vh; }
-  //
+  .title {
+    padding-top: 95px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 10px;
+    padding-left: 0;
+  }
+
 
   .scroll__btn {
     display: none;
@@ -334,7 +341,7 @@
   }
 
   .top__title {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 50px;
     margin-bottom: 0;
   }
@@ -351,8 +358,8 @@
     margin: 0 10px;
   }
 
-  .scroll__btn {
-    padding: 13px 0;
+  .excursions-box__inner {
+    min-height: 350px;
   }
 
   // .slick-slider button {
@@ -389,45 +396,85 @@
 
   }
 
-
-  .cars__images{
+  .cars__images {
     width: 100%;
   }
+
+  .cars__content {
+    width: 80%;
+    margin-top: -90px;
+}
 
   .cars__gallery {
     display: none;
   }
 
   .cars__text {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 22px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
   }
+
+  .benefits__box {
+    padding: 0;
+  }
+
+  .benefits__box-text {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.benefits__subtitle {
+  font-size: 20px;
+}
 
   .benefits__list-item {
     width: 100%;
+    padding: 10px;
   }
 
-  .benefits__list-item-text {
-    font-size: 16px;
-    line-height: 18px;
+  .benefits__list-item-img {
+    width: 30px;
+    height: 30px;
 }
 
-  .reviews__text {
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 20px;
+  .benefits__list-item-text {
+    font-size: 10px;
+    line-height: 10px;
   }
 
+  .reviews__box-wrapper {
+    padding: 10px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .reviews__box-text {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+  }
+
+  .reviews__box-text h3 {
+    font-size: 14px;
+}
+
+.reviews__box-name {
+  font-size: 14px;
+}
   .contacts__inner {
     width: 100%;
     padding: 10px;
   }
 
   .contacts__info {
-    margin: 0;;
-}
+    margin-bottom: 25px;
+  }
 
   .contacts__social-list {
     flex-direction: row;

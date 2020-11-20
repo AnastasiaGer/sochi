@@ -1057,8 +1057,7 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 15px;
-  min-height: 500px; }
+  padding: 0 15px; }
 
 .cars__images-box {
   width: 40%; }
@@ -1285,7 +1284,7 @@ body {
 
 .footer {
   position: absolute;
-  bottom: 32px;
+  bottom: 0;
   left: 0;
   right: 0; }
   .footer__copy {
@@ -1615,13 +1614,21 @@ body {
     display: none; } }
 
 @media (max-width: 575px) {
+  .page-section__wrapper {
+    min-height: 75vh; }
+  .title {
+    padding-top: 95px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 10px;
+    padding-left: 0; }
   .scroll__btn {
     display: none; }
   .btn span {
     padding: 17px 51px 15px 15px;
     margin-left: 0; }
   .top__title {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 50px;
     margin-bottom: 0; }
   .top__inner {
@@ -1630,8 +1637,8 @@ body {
     margin: 15px 0 30%; }
   .top__social-item {
     margin: 0 10px; }
-  .scroll__btn {
-    padding: 13px 0; }
+  .excursions-box__inner {
+    min-height: 350px; }
   .excursions-slider .slick-slide:nth-child(4n + 1) .excursions-box {
     margin-top: 0; }
   .excursions-slider .slick-slide:nth-child(4n + 3) .excursions-box {
@@ -1643,27 +1650,51 @@ body {
             flex-direction: row; }
   .cars__images {
     width: 100%; }
+  .cars__content {
+    width: 80%;
+    margin-top: -90px; }
   .cars__gallery {
     display: none; }
   .cars__text {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 22px;
-    margin-bottom: 10px; }
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0; }
+  .benefits__box {
+    padding: 0; }
+  .benefits__box-text {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px; }
+  .benefits__subtitle {
+    font-size: 20px; }
   .benefits__list-item {
-    width: 100%; }
+    width: 100%;
+    padding: 10px; }
+  .benefits__list-item-img {
+    width: 30px;
+    height: 30px; }
   .benefits__list-item-text {
-    font-size: 16px;
-    line-height: 18px; }
+    font-size: 10px;
+    line-height: 10px; }
+  .reviews__box-wrapper {
+    padding: 10px; }
   .reviews__text {
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 20px; }
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0; }
+  .reviews__box-text {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px; }
+  .reviews__box-text h3 {
+    font-size: 14px; }
+  .reviews__box-name {
+    font-size: 14px; }
   .contacts__inner {
     width: 100%;
     padding: 10px; }
   .contacts__info {
-    margin: 0; }
+    margin-bottom: 25px; }
   .contacts__social-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

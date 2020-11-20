@@ -332,7 +332,6 @@
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 15px;
-  min-height: 500px;
 }
 
 .cars__images-box {
@@ -587,7 +586,7 @@
 
 .footer {
   position: absolute;
-  bottom: 32px;
+  bottom: 0;
   left: 0;
   right: 0;
 
