@@ -1526,9 +1526,10 @@ body {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 0; }
   .cars__images-box {
-    width: 60%; }
+    width: 70%; }
   .cars__content {
     width: 80%; }
   .benefits__box {
@@ -1542,16 +1543,18 @@ body {
         -ms-flex-pack: center;
             justify-content: center; }
   .benefits__box-text {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 10px; }
   .benefits__box-photo {
     width: 50%;
     margin: 0 auto; }
   .benefits__subtitle {
     display: block;
-    text-align: center; }
+    padding-left: 0; }
   .benefits__items {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 10px; }
   .benefits__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1594,12 +1597,22 @@ body {
     font-size: 52px;
     line-height: 42px;
     margin-bottom: 100px; }
+  .cars__images-box {
+    width: 80%; }
+  .cars__content {
+    width: 80%; }
   .products__inner {
     padding-left: 0; }
   .reviews-slider .slick-btn {
     top: 20%; }
   .contacts__social-item {
     margin: 0 15px; } }
+
+@media (max-width: 625px) {
+  .cars__images-box {
+    width: 100%; }
+  .cars__gallery {
+    display: none; } }
 
 @media (max-width: 575px) {
   .scroll__btn {
@@ -1608,7 +1621,7 @@ body {
     padding: 17px 51px 15px 15px;
     margin-left: 0; }
   .top__title {
-    font-size: 46px;
+    font-size: 42px;
     line-height: 50px;
     margin-bottom: 0; }
   .top__inner {
@@ -1628,6 +1641,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+  .cars__images {
+    width: 100%; }
   .cars__gallery {
     display: none; }
   .cars__text {
@@ -1637,12 +1652,18 @@ body {
     margin-bottom: 10px; }
   .benefits__list-item {
     width: 100%; }
+  .benefits__list-item-text {
+    font-size: 16px;
+    line-height: 18px; }
   .reviews__text {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 20px; }
   .contacts__inner {
-    width: 100%; }
+    width: 100%;
+    padding: 10px; }
+  .contacts__info {
+    margin: 0; }
   .contacts__social-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

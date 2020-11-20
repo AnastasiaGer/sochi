@@ -47,7 +47,7 @@ $(function () {
         breakpoint: 1365,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
+          centerMode: false,
           arrows: false,
           dots: true,
         }
