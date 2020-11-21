@@ -422,7 +422,7 @@
   &__subtitle {
     font-weight: 400;
     font-size: 28px;
-    padding-left: 25px;
+    margin: 10px 0;
   }
 
   &__items {
@@ -450,14 +450,16 @@
 
 .benefits__list-item-text {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
   margin-top: 12px;
 
 }
 
 .benefits__list-item-img {
   fill: #ECB84C;
+  width: 50px;
+  height: 50px;
 }
 
 .benefits__list-item-text {
@@ -516,7 +518,7 @@
 .reviews__box-image {
   display: inline-block !important;
   border-radius: 50%;
-  width: 50%;
+  width: 30%;
   height: auto;
   aspect-ratio: attr(width) / attr(height);
 
@@ -598,6 +600,35 @@
   }
 }
 
+.about {
+  position: relative;
+
+  &__social-list {
+    padding-left: 90px;
+  }
+
+  &__social-item {
+    display: inline-block;
+    margin: 0 25px;
+  }
+
+  &__social-link {
+    opacity: 0.8;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__social-link svg {
+    padding-top: 5px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
 
 .about__wrapper {
   min-height: 100vh;
@@ -606,13 +637,19 @@
   z-index: 1;
 }
 
+.about__title {
+  padding-top: 90px;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
 .about__container {
   display: flex;
   justify-content: space-around;
-  padding: 0 100px;
-  margin-bottom: 30px;
+  padding: 0 50px;
+  margin-bottom: 20px;
   position: relative;
-  min-height: 500px;
 }
 
 .about__slider {
@@ -628,21 +665,24 @@
 
 .about__content {
   width: 55%;
-  margin-left: 20px;
-
 }
 
 .about__slider .slick-prev {
-  left: -90px;
+  left: -75px;
 }
 
 .about__slider .slick-next {
-  right: -50px;
+  right: 5px;
+}
+
+.about__slider .slick-dots {
+  top: -35px;
+  right: 55px;
 }
 
 .about__body {
   min-height: 500px;
-  padding: 0 20px 10px;
+  padding: 10px 0 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -653,13 +693,13 @@
   line-height: 18px;
 }
 
-.about__slider-img {
-  margin: 0 !important;
-}
+// .about__slider-img {
+//   margin: 0 !important;
+// }
 
 .about__text {
   padding-right: 10px;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .about__body-btnprev {
@@ -693,7 +733,7 @@
 
 .about__body-btnmore {
   bottom: 0;
-  left: 93px;
+  left: 44px;
   position: absolute;
 }
 
@@ -733,7 +773,7 @@
 // }
 
 .page__social-list {
-  padding-left: 150px;
+  padding-left: 90px;
 }
 
 @import "media";

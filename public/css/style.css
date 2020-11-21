@@ -1135,7 +1135,7 @@ body {
 .benefits__subtitle {
   font-weight: 400;
   font-size: 28px;
-  padding-left: 25px; }
+  margin: 10px 0; }
 
 .benefits__items {
   display: -webkit-box;
@@ -1166,12 +1166,14 @@ body {
 
 .benefits__list-item-text {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
   margin-top: 12px; }
 
 .benefits__list-item-img {
-  fill: #ECB84C; }
+  fill: #ECB84C;
+  width: 50px;
+  height: 50px; }
 
 .benefits__list-item-text {
   margin: 0; }
@@ -1222,7 +1224,7 @@ body {
 .reviews__box-image {
   display: inline-block !important;
   border-radius: 50%;
-  width: 50%;
+  width: 30%;
   height: auto;
   aspect-ratio: attr(width)/attr(height);
   position: relative;
@@ -1293,11 +1295,35 @@ body {
     line-height: 15;
     color: rgba(255, 255, 255, 0.64); }
 
+.about {
+  position: relative; }
+  .about__social-list {
+    padding-left: 90px; }
+  .about__social-item {
+    display: inline-block;
+    margin: 0 25px; }
+  .about__social-link {
+    opacity: 0.8;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+    .about__social-link:hover {
+      opacity: 1; }
+  .about__social-link svg {
+    padding-top: 5px; }
+    .about__social-link svg:hover {
+      opacity: 1; }
+
 .about__wrapper {
   min-height: 100vh;
   padding: 0;
   position: relative;
   z-index: 1; }
+
+.about__title {
+  padding-top: 90px;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 20px; }
 
 .about__container {
   display: -webkit-box;
@@ -1305,27 +1331,29 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 100px;
-  margin-bottom: 30px;
-  position: relative;
-  min-height: 500px; }
+  padding: 0 50px;
+  margin-bottom: 20px;
+  position: relative; }
 
 .about__slider {
   width: 40%; }
 
 .about__content {
-  width: 55%;
-  margin-left: 20px; }
+  width: 55%; }
 
 .about__slider .slick-prev {
-  left: -90px; }
+  left: -75px; }
 
 .about__slider .slick-next {
-  right: -50px; }
+  right: 5px; }
+
+.about__slider .slick-dots {
+  top: -35px;
+  right: 55px; }
 
 .about__body {
   min-height: 500px;
-  padding: 0 20px 10px;
+  padding: 10px 0 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1341,12 +1369,9 @@ body {
   font-size: 14px;
   line-height: 18px; }
 
-.about__slider-img {
-  margin: 0 !important; }
-
 .about__text {
   padding-right: 10px;
-  margin-bottom: 0; }
+  margin-top: 0; }
 
 .about__body-btnprev {
   bottom: 10px;
@@ -1375,7 +1400,7 @@ body {
 
 .about__body-btnmore {
   bottom: 0;
-  left: 93px;
+  left: 44px;
   position: absolute; }
 
 .about__body-btnmore a span {
@@ -1391,7 +1416,7 @@ body {
   left: 33px; }
 
 .page__social-list {
-  padding-left: 150px; }
+  padding-left: 90px; }
 
 @media (max-width: 1230px) {
   .title {
@@ -1500,6 +1525,8 @@ body {
   .menu__btn.menu__btn--active::before {
     -webkit-transform: translateY(5px) rotate(135deg);
             transform: translateY(5px) rotate(135deg); }
+  .header__phone-menu {
+    font-size: 16px; }
   .header__phone {
     display: none; }
   .header__btn {
@@ -1508,17 +1535,24 @@ body {
     width: 30%; }
   .cars__content {
     width: 40%; }
+  .about__title {
+    margin-bottom: 25px; }
   .about__content {
     width: 45%; }
   .about__slider {
     width: 40%; }
   .about__body {
-    font-size: 14px;
-    line-height: 22px; } }
+    font-size: 13px;
+    line-height: 20px; }
+  .about__container {
+    padding: 0 21px; } }
 
 @media (max-width: 1065px) {
   .page__social-list {
-    margin-top: -65px; } }
+    margin-top: -65px; }
+  .about__body {
+    padding: 10px 0 10px 10px;
+    font-size: 12px; } }
 
 @media (max-width: 990px) {
   .top__title {
@@ -1597,10 +1631,41 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-  .about__header-info {
-    display: none; }
   .about__slider {
-    width: 45%; } }
+    width: 45%; }
+  .btn {
+    font-size: 26px;
+    line-height: 22px; }
+  .about__social-link img {
+    width: 40px;
+    height: 40px; } }
+
+@media (max-width: 850px) {
+  .about__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .about__body-btnprev {
+    left: 190px;
+    text-align: left; }
+  .about__slider {
+    width: 90%; }
+  .about__slider-item {
+    margin: 0 auto; }
+  .about__content {
+    width: 90%;
+    margin-bottom: 60px; }
+  .about__slider-img {
+    margin: 0 auto; } }
 
 @media (max-width: 770px) {
   .top__title {
@@ -1616,7 +1681,26 @@ body {
   .reviews-slider .slick-btn {
     top: 20%; }
   .contacts__social-item {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+  .about__inner {
+    padding-bottom: 25px; }
+  .about__header-info {
+    display: none; }
+  .about__body-btnprev {
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: absolute; }
+  .about__body-btnmore {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: absolute; }
+  .about__social-list {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 25px; } }
 
 @media (max-width: 625px) {
   .cars__images-box {
@@ -1627,6 +1711,8 @@ body {
 @media (max-width: 575px) {
   .page-section__wrapper {
     min-height: 75vh; }
+  .btn {
+    font-size: 20px; }
   .title {
     padding-top: 95px;
     margin-bottom: 30px;
@@ -1712,7 +1798,22 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+        justify-content: space-around; }
+  .about__title {
+    padding-top: 115px;
+    margin-bottom: 58px;
+    font-size: 30px;
+    line-height: 10px;
+    padding-left: 45px; }
+  .about__body-btnprev a span {
+    padding: 17px 30px 15px 55px; }
+    .about__body-btnprev a span::after {
+      top: 10%;
+      left: 20px; }
+  .about__body-btnmoreimg {
+    position: absolute;
+    top: 12px;
+    left: 15px; } }
 
 @media (max-height: 375px) {
   .menu__list-phone {

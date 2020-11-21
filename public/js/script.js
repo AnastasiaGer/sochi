@@ -109,9 +109,10 @@ $(function () {
     autoplay: true,
     fade: true,
     responsive: [{
-      breakpoint: 601,
+      breakpoint: 1200,
       settings: {
-        arrows: false
+        arrows: false,
+        dots: true,
       }
     }]
   });
