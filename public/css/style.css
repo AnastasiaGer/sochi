@@ -1665,7 +1665,12 @@ body {
     width: 90%;
     margin-bottom: 60px; }
   .about__slider-img {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover; } }
 
 @media (max-width: 770px) {
   .top__title {

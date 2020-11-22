@@ -329,6 +329,10 @@
 
   .about__slider-img{
     margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
 }
