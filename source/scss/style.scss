@@ -392,6 +392,55 @@
   opacity: 1;
 }
 
+// tours
+
+.tours {
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+
+    margin-bottom: 40px;
+
+    &-text {
+      padding: 10px 25px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+      line-height: 20px;
+      width: 50%;
+    }
+
+    &-photo {
+      width: 40%;
+    }
+
+    &-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.tours__social-list {
+  margin: 0 auto;
+  text-align: center;
+}
+
 // benefits
 .benefits {
   &__box {
@@ -465,6 +514,8 @@
 .benefits__list-item-text {
   margin: 0;
 }
+
+// reviews
 
 .reviews {
   position: relative;

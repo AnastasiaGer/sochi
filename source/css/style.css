@@ -1111,6 +1111,46 @@ body {
 .cars__gallery-item:hover .middle {
   opacity: 1; }
 
+.tours__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  margin-bottom: 40px; }
+  .tours__box-text {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%; }
+  .tours__box-photo {
+    width: 40%; }
+  .tours__box-img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.tours__subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  margin: 10px 0; }
+
+.tours__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 20px; }
+
+.tours__social-list {
+  margin: 0 auto;
+  text-align: center; }
+
 .benefits__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1574,7 +1614,8 @@ body {
     width: 70%; }
   .cars__content {
     width: 80%; }
-  .benefits__box {
+  .benefits__box,
+  .tours__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1584,11 +1625,20 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .tours__box {
+    margin-bottom: 20px; }
+  .tours__box-text {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px; }
   .benefits__box-text {
     width: 100%;
     margin-bottom: 10px; }
   .benefits__box-photo {
     width: 50%;
+    margin: 0 auto; }
+  .tours__box-photo {
+    width: 40%;
     margin: 0 auto; }
   .benefits__subtitle {
     display: block;
@@ -1759,9 +1809,11 @@ body {
     font-size: 14px;
     line-height: 18px;
     margin: 0; }
-  .benefits__box {
+  .benefits__box,
+  .tours__box {
     padding: 0; }
-  .benefits__box-text {
+  .benefits__box-text,
+  .tours__box-text {
     padding: 10px;
     font-size: 12px;
     line-height: 16px; }

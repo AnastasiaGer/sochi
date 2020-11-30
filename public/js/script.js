@@ -88,7 +88,7 @@ $(function () {
     scrollingSpeed: 700,
     scrollOverflow: true,
     menu: '#header__nav',
-    anchors: ['top', 'excursions', 'cars', 'boats', 'benefits', 'reviews', 'contacts'],
+    anchors: ['top', 'excursions', 'cars', 'boats', 'tours', 'benefits', 'reviews', 'contacts'],
   });
 
   $('.menu__btn').on('click', function () {

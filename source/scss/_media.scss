@@ -208,7 +208,8 @@
   }
 
 
-  .benefits {
+  .benefits,
+  .tours {
     &__box {
       flex-direction: column;
       flex-wrap: wrap;
@@ -216,13 +217,28 @@
     }
   }
 
-  .benefits__box-text {
+  .tours__box{
+    margin-bottom: 20px;
+  }
+
+  .tours__box-text {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .benefits__box-text{
     width: 100%;
     margin-bottom: 10px;
   }
 
-  .benefits__box-photo {
+  .benefits__box-photo{
     width: 50%;
+    margin: 0 auto;
+  }
+
+  .tours__box-photo {
+    width: 40%;
     margin: 0 auto;
   }
 
@@ -307,11 +323,8 @@
     text-align: left;
   }
 
-
-
   .about__slider {
     width: 90%;
-
   }
 
   .about__slider-item {
@@ -386,8 +399,6 @@
     position: absolute;
   }
 
-
-
   .about__social-list {
     padding-left: 0;
     text-align: center;
@@ -405,8 +416,6 @@
   .cars__gallery {
     display: none;
   }
-
-
 }
 
 // ------------------------------------------------------
@@ -415,7 +424,6 @@
   .page-section__wrapper {
     min-height: 75vh;
   }
-
 
   .btn {
     font-size: 20px;
@@ -428,7 +436,6 @@
     line-height: 10px;
     padding-left: 0;
   }
-
 
   .scroll__btn {
     display: none;
@@ -514,11 +521,13 @@
     margin: 0;
   }
 
-  .benefits__box {
+  .benefits__box,
+  .tours__box {
     padding: 0;
   }
 
-  .benefits__box-text {
+  .benefits__box-text,
+  .tours__box-text {
     padding: 10px;
     font-size: 12px;
     line-height: 16px;
