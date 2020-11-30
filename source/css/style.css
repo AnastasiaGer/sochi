@@ -1147,10 +1147,6 @@ body {
   padding: 20px;
   padding-bottom: 20px; }
 
-.tours__social-list {
-  margin: 0 auto;
-  text-align: center; }
-
 .benefits__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1462,8 +1458,7 @@ body {
   .title {
     padding-top: 90px;
     font-size: 35px;
-    line-height: 42px;
-    margin-bottom: 20px; }
+    line-height: 42px; }
   .menu {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1503,7 +1498,7 @@ body {
   .menu__list-link {
     display: block; }
   .menu__list-item {
-    margin-bottom: 35px; }
+    margin-bottom: 25px; }
     .menu__list-item:first-child {
       margin-top: auto; }
   .menu__list-phone {
