@@ -1498,7 +1498,7 @@ body {
   .menu__list-link {
     display: block; }
   .menu__list-item {
-    margin-bottom: 25px; }
+    margin-bottom: 15px; }
     .menu__list-item:first-child {
       margin-top: auto; }
   .menu__list-phone {
